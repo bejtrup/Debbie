@@ -421,7 +421,7 @@ var programArray = [
     },
     {
       "name": "CLUTCH",
-      "start": 0900,
+      "start": 900,
       "end": 0,
       "stage": "Orange"
     },
