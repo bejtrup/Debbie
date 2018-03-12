@@ -1,0 +1,118 @@
+@font-face {
+  font-family: HVD;
+  src: url(HVD_Poster_Clean.ttf);
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+html, body {
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+  height:100%;
+  margin:0px;
+  padding:0px;
+  width:100%;
+  overflow: hidden;
+  font-family: HVD,"HVD",Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+.fullscreen {
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+}
+.fullscreen.protrait{
+
+}
+.fullscreen.landscape{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  left: 16vw;
+}
+@media screen and (orientation: portrait) {
+  body{background: #FFDC6D;}
+  .fullscreen.protrait{
+    display: block;
+  }
+  .fullscreen.landscape{
+    display: none;
+  }
+}
+@media screen and (orientation: landscape) {
+  body{background: #E45499;}
+  .fullscreen.protrait{
+    display: none;
+  }
+  .fullscreen.landscape{
+    display: block;
+  }
+}
+
+.giveRate {}
+  .giveRate div {
+    display: inline-block;
+    float:left;
+    width: 33%;
+    text-align: center;
+  }
+
+.onCan {
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+.can{
+  position: fixed;
+  top: -19px;
+  height: 115%;
+  left: -44px;
+}
+.wipeAss{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  right: 0;
+}
+.program{
+  border: 1px solid white;
+  height: 80%;
+  margin-top: 7%;
+  min-width: 4900vw; /* 600 * 8 + 100*/
+}
+.day{
+  position: relative;
+  border-right: 1px solid white;
+  display: inline-block;
+  float: left;
+  width: 600vw; /*2400 / 4 = 600*/
+  height: 100%;
+}
+
+.hourWrapper{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.hour{
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 4.16666666%;
+  height: 100%;
+}
+.hour:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background: green;
+}
