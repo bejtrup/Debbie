@@ -9,7 +9,7 @@
     "theme_color" : "#FFDC6D",
     "description" : "Musikprogram",
     "orientation" : "portrait",
-    "background_color" : "#E65199",
+    "background_color" : "#FFDC6D",
     "icons": [{
       "src": "icons/icon-48-mdpi.png",
       "sizes": "48x48",
