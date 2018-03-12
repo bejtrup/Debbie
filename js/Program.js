@@ -14,7 +14,7 @@ function makeMusikProgram(){
    });
 }
 
-var now = { day: 4, time: 0800 };
+var now = { day: 4, time: 0700 };
 $( function(){ settime(now) } );
 
 function settime(now) {

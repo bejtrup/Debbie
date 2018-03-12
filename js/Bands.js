@@ -940,7 +940,7 @@ var programArray = [
   ],
   [
     {
-      "name": "MYRKUR",
+      "name": "MYRKURx2",
       "start": 0,
       "end": 0,
       "stage": "Orange"
