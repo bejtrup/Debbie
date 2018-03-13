@@ -1,0 +1,144 @@
+/* MIXINS */
+
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes #{$animation_name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation_name}  {
+        @content;
+    }
+
+    @-o-keyframes #{$animation_name}  {
+        @content;
+    }
+
+    @keyframes #{$animation_name}  {
+        @content;
+    }
+}
+
+@mixin animation ($delay, $duration, $animation, $ease) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-timing-function: $ease;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-timing-function: $ease;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+    -o-animation-timing-function: $ease;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-timing-function: $ease;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+/* ANIMATIONS */
+/* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+@include keyframe(nope) {
+    0% {
+        transform: translateY(0);
+    }
+    95% {
+        transform: translateY(60vh);
+        width: 10vh;
+        height: 10vh;
+        margin-left: -5vh;
+    }
+    100% {
+        transform: translateY(65vh);
+        width: 14vh;
+        height: 5vh;
+        margin-left: -7vh;
+    }
+}
+@include keyframe(meh) {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(40vh);
+    }
+}
+@include keyframe(yeah) {
+    0% {
+        transform: translate(-0, 0);
+    }
+    50% {
+      //midt 33%
+      transform: translate(-33vw, 10vh);
+    }
+    100% {
+        transform: translate(-33vw, 50vh);
+    }
+}
+
+/* CSS */
+
+.bandName {
+  display: table;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+}
+
+.giveRate {
+  width: 100%;
+  height: 20%;
+  .foodContainer {
+    position: relative;
+    display: inline-block;
+    float:left;
+    width: 33%;
+    text-align: center;
+    padding-top: 10vh;
+  }
+  .food{
+    position: absolute;
+    background: #FFDC6D;
+    display: block;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 5vh;
+    left: 50%;
+    margin-left: -5vh;
+    top: 0;
+    z-index: 50;
+  }
+  .food.nope.fall{
+      //transform: translateY(80vh);
+      @include animation(0, 0.3s, nope, ease-in)
+  }
+  .food.meh.fall{
+      @include animation(0, 0.3s, meh, ease)
+  }
+  .food.yeah.fall{
+    @include animation(0, 0.5s, yeah, ease)
+  }
+}
+.onCan {
+  width: 100%;
+  height: 60%;
+}
+.onCan img{
+  position: absolute;
+  left: 0;
+  width: 100%;
+      bottom: 4vh;
+}
+.onCan .onCanFront {
+  z-index: 100;
+}
+.onCan .onCanBack {
+  z-index: 10;
+}

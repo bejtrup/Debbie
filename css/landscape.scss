@@ -1,0 +1,50 @@
+.can{
+  position: fixed;
+  top: -19px;
+  height: 115%;
+  left: -44px;
+}
+.wipeAss{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  right: 0;
+}
+.program{
+  height: 80%;
+  margin-top: 7%;
+  min-width: 4900vw; /* 600 * 8 + 100*/
+  background: #fefff9;
+}
+.day{
+  position: relative;
+  border-right: 3px dashed #6cc8c2;
+  display: inline-block;
+  float: left;
+  width: 600vw; /*2400 / 4 = 600*/
+  height: 100%;
+}
+
+.hourWrapper{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.hour{
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 4.16666666%;
+  height: 100%;
+}
+.hour:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background: #e4e8d1;
+}
