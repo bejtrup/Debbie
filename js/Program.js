@@ -26,11 +26,21 @@ function settime(now) {
   //$(".program").css({"transform": "translateX(-25695px)"});
 }
 $(function(){
+  var isAnimationOn = false;
   $("div.food").click(function(){
-    $this = $(this);
-    $this.addClass("fall");
-    setTimeout(function(){
-      $this.removeClass("fall");
-    }, 1200);
+    if(!isAnimationOn){
+      $this = $(this);
+      $this.addClass("fall");
+      isAnimationOn = true;
+      $("div.food").prop('disabled',true);
+      setTimeout(function(){
+        $this.removeClass("fall");
+        isAnimationOn = false;
+      }, 1200);
+    }
   });
 });
+
+function rateBand(){
+
+}
