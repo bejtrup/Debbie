@@ -21,41 +21,6 @@ function settime(now) {
   console.log(now);
   var time = now.time == 0000 ? 2400 : now.time;
   var h = time >= 1000 ? parseInt(time.toString().substr(0, 2)) : parseInt(time.toString().substr(0, 1));
-  var left = (now.day * 600) + (h*(100/4)); // 10 = marginleft 600=bredden for en dag // 100/4 da der er 4 timer på en skærm
+  var left = (now.day * 300) + (h*(100/8)); // 10 = marginleft 300=bredden for en dag // 100/8 da der er 8 timer på en skærm
   $(".program").css({"transform": "translateX(-"+left+"vw)"});
-  //$(".program").css({"transform": "translateX(-25695px)"});
-}
-$(function(){
-  $("div.bandName").html(getBandNameHtml(0)).removeClass("out");
-  var isAnimationOn = false;
-  $("div.food").click(function(){
-    if(!isAnimationOn){
-      $this = $(this);
-      $this.addClass("fall");
-      isAnimationOn = true;
-      setTimeout(function(){
-        $this.removeClass("fall");
-        isAnimationOn = false;
-        loadNextBand();
-      }, 1200);
-    }
-  });
-});
-
-function rateBand(){
-
-}
-function loadNextBand(){
-  $("div.bandName").addClass("out");
-  setTimeout(function(){
-    var id = $("div.bandName input").val();
-    id = parseInt(id)+1
-    $("div.bandName").html(getBandNameHtml( id ));
-    $("div.bandName").removeClass("out");
-  }, 700);
-}
-function getBandNameHtml(id){
-  var name = bands[id].name;
-  var day = bands[id].fullDate;
-  return "<h1>"+name+"</h1><h4>"+day+"</h4><input type='hidden' name=''' value='"+id+"'>";
 }
