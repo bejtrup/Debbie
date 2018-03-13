@@ -8,7 +8,7 @@
     "short_name" : "Debbie",
     "theme_color" : "#FFDC6D",
     "description" : "Musikprogram",
-    "orientation" : "portrait",
+    "orientation" : "any",
     "background_color" : "#FFDC6D",
     "icons": [{
       "src": "icons/icon-48-mdpi.png",
