@@ -35,7 +35,7 @@ html, body {
   left: 16vw;
 }
 @media screen and (orientation: portrait) {
-  body{background: #FFDC6D;}
+  body{background: #6CC7C2;}
   .fullscreen.protrait{
     display: block;
   }
@@ -53,18 +53,68 @@ html, body {
   }
 }
 
-.giveRate {}
-  .giveRate div {
+/* POTRAIT */
+
+.bandName {
+  display: table;
+  text-align: center;
+  width: 100%;
+  height: 20%;
+}
+
+.giveRate {
+  width: 100%;
+  height: 20%;
+}
+  .giveRate .foodContainer {
+    position: relative;
     display: inline-block;
     float:left;
     width: 33%;
     text-align: center;
+    padding-top: 10vh;
   }
-
+  .giveRate .food{
+    position: absolute;
+    background: #FFDC6D;
+    display: block;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 5vh;
+    left: 50%;
+    margin-left: -5vh;
+    top: 0;
+    z-index: 50;
+  }
+  .giveRate .food.fall{
+      transition: 1s;
+  }
+  .giveRate .food.nope.fall{
+      transform: translateY(80vh);
+  }
+  .giveRate .food.meh.fall{
+      transform: translateY(50vh);
+  }
+  .giveRate .food.yeah.fall{
+      transform: translate(-40vw, 40vh);
+  }
 .onCan {
-  width: 80vw;
-  margin-left: 10vw;
+  width: 100%;
+  height: 60%;
 }
+.onCan img{
+  position: absolute;
+  left: 0;
+  width: 100%;
+      bottom: 4vh;
+}
+.onCan .onCanFront {
+  z-index: 100;
+}
+.onCan .onCanBack {
+  z-index: 10;
+}
+/* LANDSCAPE */
 
 .can{
   position: fixed;
