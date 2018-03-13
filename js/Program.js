@@ -25,3 +25,12 @@ function settime(now) {
   $(".program").css({"transform": "translateX(-"+left+"vw)"});
   //$(".program").css({"transform": "translateX(-25695px)"});
 }
+$(function(){
+  $("div.food").click(function(){
+    $this = $(this);
+    $this.addClass("fall");
+    setTimeout(function(){
+      $this.removeClass("fall");
+    }, 1200);
+  });
+});
