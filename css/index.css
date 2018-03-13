@@ -17,6 +17,7 @@ html, body {
   width:100%;
   overflow: hidden;
   font-family: HVD,"HVD",Arial,"Helvetica Neue",Helvetica,sans-serif;
+  background: #6CC7C2;
 }
 
 .fullscreen {
@@ -35,7 +36,6 @@ html, body {
   left: 16vw;
 }
 @media screen and (orientation: portrait) {
-  body{background: #6CC7C2;}
   .fullscreen.protrait{
     display: block;
   }
@@ -44,7 +44,6 @@ html, body {
   }
 }
 @media screen and (orientation: landscape) {
-  body{background: #E45499;}
   .fullscreen.protrait{
     display: none;
   }
@@ -129,14 +128,14 @@ html, body {
   right: 0;
 }
 .program{
-  border: 1px solid white;
   height: 80%;
   margin-top: 7%;
   min-width: 4900vw; /* 600 * 8 + 100*/
+  background: #fefff9;
 }
 .day{
   position: relative;
-  border-right: 1px solid white;
+  border-right: 3px dashed #6cc8c2;
   display: inline-block;
   float: left;
   width: 600vw; /*2400 / 4 = 600*/
@@ -164,5 +163,5 @@ html, body {
   bottom: 0;
   right: 0;
   width: 1px;
-  background: green;
+  background: #e4e8d1;
 }
