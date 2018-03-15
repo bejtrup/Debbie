@@ -1,4 +1,6 @@
-var now = { day: 3, time: 2300 };
+var date =  new Date;
+var time = parseInt(date.getHours()+""+date.getMinutes());
+var now = { day: 4, time: time };
 $( makeMusikProgram );
 $( function(){ settime(now) } );
 
@@ -28,7 +30,11 @@ function makeMusikProgram(){
 function settime(now) {
   console.log(now);
   var time = now.time == 0000 ? 2400 : now.time;
-  var h = time >= 1000 ? parseInt(time.toString().substr(0, 2)) : parseInt(time.toString().substr(0, 1));
+  var h = parseInt( time.toString().slice(0, -2) );
+  var m = parseInt(time.toString().slice(-2)) * (100/8/60);
   var left = (now.day * 300) + (h*(100/8)); // 10 = marginleft 300=bredden for en dag // 100/8 da der er 8 timer på en skærm
+
+  left = left + m;
+
   $(".program").css({"transform": "translateX(-"+left+"vw)"});
 }

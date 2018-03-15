@@ -464,7 +464,7 @@ var programArray = [
     "day": 5,
     "start": 1300,
     "length": 1.5,
-    "stage": 4
+    "stage": 0
   },
   {
     "name": "ALEX VARGAS",
