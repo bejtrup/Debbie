@@ -373,6 +373,19 @@ var bands = [
 //   if(num == 1000) num = 9;
 //   programArray[num].push({name: v.name, start: 0, end: 0, stage: "Orange"});
 // });
+// var programArray = [];
+// $.each(bands, function(k,v){
+//   day = getPlayDay(v.fullDate);
+//
+//   var a = [1,1.5,2];
+//   var length = a[Math.floor(Math.random() * a.length)];
+//   var b = [100, 900, 1345, 2000, 2130, 2200];
+//   var start = b[Math.floor(Math.random() * b.length)];
+//   var stage = Math.floor(Math.random() * 6);
+//
+//   programArray.push({name: v.name, day: day, start: start, length: length, stage: stage});
+// });
+// console.log(programArray);
 
 function getPlayDay(fd){
   if(fd == "") return -1;
@@ -390,560 +403,634 @@ function getPlayDay(fd){
 // lørdag - lørdag
 
 var programArray = [
-  [],
-  [],
-  [],
-  [],
-  [
-    {
-      "name": "EMINEM",
-      "start": 2200,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "NINE INCH NAILS",
-      "start": 1900,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "CARDI B",
-      "start": 2300,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "THE BLAZE",
-      "start": 1100,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "CLUTCH",
-      "start": 900,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "ST. VINCENT",
-      "start": 2200,
-      "end": 0,
-      "stage": "Orange"
-    }
-  ],
-  [
-    {
-      "name": "CHELSEA MANNING",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "BRUNO MARS",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "KHALID",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "NEPHEW",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "6LACK",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "BLACK STAR",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "BORIS & MERZBOW",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "EL LEOPARDO",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "FIRST AID KIT",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "HEILUNG",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "MOTORSAV",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "MY BLOODY VALENTINE",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "NYT LIV",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "OH SEES",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "OND TRO",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "PREOCCUPATIONS",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "REGELBAU PRESENTS CENTRAL + DJ SPORTS + C.K + MANMADE DEEJAY",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "STORMZY",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "SUPERORGANISM",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "TURBOLENS",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "WILKINSON",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "YASMINE HAMDAN",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    }
-  ],
-  [
-    {
-      "name": "DAVID BYRNE",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "AMMAR 808",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "BENAL",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "CELESTE",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "DEAD CROSS",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "DESCENDENTS",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "FEVER RAY",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "FLEET FOXES",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "FOUR TET",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "LAUREL HALO",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "LEKHFA",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "ODESZA",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "SAMPHA",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "(SANDY) ALEX G",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "STEFFLON DON",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "WATAIN",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "YASUAKI SHIMIZU",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    }
-  ],
-  [
-    {
-      "name": "GORILLAZ",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "CV JØRGENSEN",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "JUANA MOLINA",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "KELLY LEE OWENS",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "KOKOKO!",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "MHD",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "MOGWAI",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "OMNI",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "PALM",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "SCOUR",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "SIGRID",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "SLAVES",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "VETO",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "VINCE STAPLES",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "YONAKA",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    }
-  ],
-  [
-    {
-      "name": "ALEX VARGAS",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "B FROM E",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "BABY IN VAIN",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "BAIME",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "BANKSLAVE",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "BISSE",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "CABAL",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "CEZINANDO",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "CHELSEA WOLFE",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "EMIL KRUSE",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "FOOL",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "GOSS",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "GURLI OCTAVIA",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "IRIS GOLD",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "KAKKMADDAFAKKA",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "KIPPENBERGER",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "LØD",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "±MAISMENOS±",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "MARSHALL CECIL",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "NATHAN FAKE",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "NELSON CAN",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "PALE HONEY",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "PETER SOMMER",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "ROME IS NOT A TOWN",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "SASSY 009",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "SIMON LITTAUER",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "SLÆGT",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "SMERZ",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    },
-    {
-      "name": "THE MINDS OF 99",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    }
-  ],
-  [
-    {
-      "name": "MYRKURx2",
-      "start": 0,
-      "end": 0,
-      "stage": "Orange"
-    }
-  ]
+  {
+    "name": "CHELSEA MANNING",
+    "day": 5,
+    "start": 2000,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "EMINEM",
+    "day": 4,
+    "start": 130,
+    "length": 2,
+    "stage": 0
+  },
+  {
+    "name": "BRUNO MARS",
+    "day": 5,
+    "start": 2000,
+    "length": 2,
+    "stage": 5
+  },
+  {
+    "name": "GORILLAZ",
+    "day": 7,
+    "start": 2200,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "NINE INCH NAILS",
+    "day": 4,
+    "start": 1345,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "CARDI B",
+    "day": 4,
+    "start": 100,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "DAVID BYRNE",
+    "day": 6,
+    "start": 1345,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "KHALID",
+    "day": 5,
+    "start": 2000,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "NEPHEW",
+    "day": 5,
+    "start": 1300,
+    "length": 1.5,
+    "stage": 4
+  },
+  {
+    "name": "ALEX VARGAS",
+    "day": -1,
+    "start": 2000,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "AMMAR 808",
+    "day": 6,
+    "start": 900,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "B FROM E",
+    "day": -1,
+    "start": 900,
+    "length": 2,
+    "stage": 1
+  },
+  {
+    "name": "BABY IN VAIN",
+    "day": -1,
+    "start": 2000,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "BAIME",
+    "day": -1,
+    "start": 2000,
+    "length": 1,
+    "stage": 5
+  },
+  {
+    "name": "BANKSLAVE",
+    "day": -1,
+    "start": 2000,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "BENAL",
+    "day": 6,
+    "start": 900,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "BISSE",
+    "day": -1,
+    "start": 2130,
+    "length": 1.5,
+    "stage": 0
+  },
+  {
+    "name": "6LACK",
+    "day": 5,
+    "start": 2200,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "BLACK STAR",
+    "day": 5,
+    "start": 1345,
+    "length": 1.5,
+    "stage": 4
+  },
+  {
+    "name": "THE BLAZE",
+    "day": 4,
+    "start": 900,
+    "length": 2,
+    "stage": 0
+  },
+  {
+    "name": "BORIS & MERZBOW",
+    "day": 5,
+    "start": 1400,
+    "length": 1,
+    "stage": 5
+  },
+  {
+    "name": "CABAL",
+    "day": -1,
+    "start": 100,
+    "length": 2,
+    "stage": 1
+  },
+  {
+    "name": "CELESTE",
+    "day": 6,
+    "start": 1345,
+    "length": 1,
+    "stage": 3
+  },
+  {
+    "name": "CEZINANDO",
+    "day": -1,
+    "start": 100,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "CHELSEA WOLFE",
+    "day": -1,
+    "start": 900,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "CLUTCH",
+    "day": 4,
+    "start": 2000,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "CV JØRGENSEN",
+    "day": 7,
+    "start": 2200,
+    "length": 1.5,
+    "stage": 2
+  },
+  {
+    "name": "DEAD CROSS",
+    "day": 6,
+    "start": 2130,
+    "length": 1,
+    "stage": 3
+  },
+  {
+    "name": "DESCENDENTS",
+    "day": 6,
+    "start": 100,
+    "length": 2,
+    "stage": 0
+  },
+  {
+    "name": "EL LEOPARDO",
+    "day": 5,
+    "start": 900,
+    "length": 1.5,
+    "stage": 3
+  },
+  {
+    "name": "EMIL KRUSE",
+    "day": -1,
+    "start": 2000,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "FEVER RAY",
+    "day": 6,
+    "start": 100,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "FIRST AID KIT",
+    "day": 5,
+    "start": 1345,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "FLEET FOXES",
+    "day": 6,
+    "start": 2200,
+    "length": 2,
+    "stage": 0
+  },
+  {
+    "name": "FOOL",
+    "day": -1,
+    "start": 900,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "FOUR TET",
+    "day": 6,
+    "start": 2130,
+    "length": 1.5,
+    "stage": 5
+  },
+  {
+    "name": "GOSS",
+    "day": -1,
+    "start": 900,
+    "length": 1.5,
+    "stage": 5
+  },
+  {
+    "name": "GURLI OCTAVIA",
+    "day": -1,
+    "start": 2200,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "HEILUNG",
+    "day": 5,
+    "start": 2130,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "IRIS GOLD",
+    "day": -1,
+    "start": 2130,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "JUANA MOLINA",
+    "day": 7,
+    "start": 900,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "KAKKMADDAFAKKA",
+    "day": -1,
+    "start": 2200,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "KELLY LEE OWENS",
+    "day": 7,
+    "start": 2200,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "KIPPENBERGER",
+    "day": -1,
+    "start": 900,
+    "length": 1,
+    "stage": 3
+  },
+  {
+    "name": "KOKOKO!",
+    "day": 7,
+    "start": 2200,
+    "length": 2,
+    "stage": 0
+  },
+  {
+    "name": "LAUREL HALO",
+    "day": 6,
+    "start": 2000,
+    "length": 1.5,
+    "stage": 0
+  },
+  {
+    "name": "LEKHFA",
+    "day": 6,
+    "start": 900,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "LØD",
+    "day": -1,
+    "start": 2200,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "±MAISMENOS±",
+    "day": -1,
+    "start": 900,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "MARSHALL CECIL",
+    "day": -1,
+    "start": 900,
+    "length": 1.5,
+    "stage": 0
+  },
+  {
+    "name": "MHD",
+    "day": 7,
+    "start": 2200,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "MOGWAI",
+    "day": 7,
+    "start": 2200,
+    "length": 2,
+    "stage": 1
+  },
+  {
+    "name": "MOTORSAV",
+    "day": 5,
+    "start": 1345,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "MY BLOODY VALENTINE",
+    "day": 5,
+    "start": 2000,
+    "length": 2,
+    "stage": 0
+  },
+  {
+    "name": "MYRKUR",
+    "day": 1000,
+    "start": 2000,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "NATHAN FAKE",
+    "day": -1,
+    "start": 1345,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "NELSON CAN",
+    "day": -1,
+    "start": 1345,
+    "length": 1.5,
+    "stage": 2
+  },
+  {
+    "name": "NYT LIV",
+    "day": 5,
+    "start": 100,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "ODESZA",
+    "day": 6,
+    "start": 900,
+    "length": 1.5,
+    "stage": 0
+  },
+  {
+    "name": "OH SEES",
+    "day": 5,
+    "start": 1800,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "OMNI",
+    "day": 7,
+    "start": 100,
+    "length": 1.5,
+    "stage": 3
+  },
+  {
+    "name": "OND TRO",
+    "day": 5,
+    "start": 1345,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "PALE HONEY",
+    "day": -1,
+    "start": 900,
+    "length": 1.5,
+    "stage": 4
+  },
+  {
+    "name": "PALM",
+    "day": 7,
+    "start": 100,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "PETER SOMMER",
+    "day": -1,
+    "start": 2200,
+    "length": 1,
+    "stage": 5
+  },
+  {
+    "name": "PREOCCUPATIONS",
+    "day": 5,
+    "start": 100,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "REGELBAU PRESENTS CENTRAL + DJ SPORTS + C.K + MANMADE DEEJAY",
+    "day": 5,
+    "start": 2200,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "ROME IS NOT A TOWN",
+    "day": -1,
+    "start": 2130,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "SAMPHA",
+    "day": 6,
+    "start": 2200,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "(SANDY) ALEX G",
+    "day": 6,
+    "start": 1345,
+    "length": 1.5,
+    "stage": 3
+  },
+  {
+    "name": "SASSY 009",
+    "day": -1,
+    "start": 2200,
+    "length": 1,
+    "stage": 5
+  },
+  {
+    "name": "SCOUR",
+    "day": 7,
+    "start": 2000,
+    "length": 2,
+    "stage": 5
+  },
+  {
+    "name": "SIGRID",
+    "day": 7,
+    "start": 100,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "SIMON LITTAUER",
+    "day": -1,
+    "start": 2000,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "SLAVES",
+    "day": 7,
+    "start": 2130,
+    "length": 1.5,
+    "stage": 2
+  },
+  {
+    "name": "SLÆGT",
+    "day": -1,
+    "start": 2000,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "SMERZ",
+    "day": -1,
+    "start": 100,
+    "length": 1.5,
+    "stage": 4
+  },
+  {
+    "name": "ST. VINCENT",
+    "day": 4,
+    "start": 2000,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "STEFFLON DON",
+    "day": 6,
+    "start": 2130,
+    "length": 1.5,
+    "stage": 2
+  },
+  {
+    "name": "STORMZY",
+    "day": 5,
+    "start": 1900,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "SUPERORGANISM",
+    "day": 5,
+    "start": 1700,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "THE MINDS OF 99",
+    "day": -1,
+    "start": 2200,
+    "length": 2,
+    "stage": 5
+  },
+  {
+    "name": "TURBOLENS",
+    "day": 5,
+    "start": 900,
+    "length": 1.5,
+    "stage": 2
+  },
+  {
+    "name": "VETO",
+    "day": 7,
+    "start": 2130,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "VINCE STAPLES",
+    "day": 7,
+    "start": 900,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "WATAIN",
+    "day": 6,
+    "start": 1345,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "WILKINSON",
+    "day": 5,
+    "start": 2130,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "YASMINE HAMDAN",
+    "day": 5,
+    "start": 2400,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "YASUAKI SHIMIZU",
+    "day": 6,
+    "start": 900,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "YONAKA",
+    "day": 7,
+    "start": 900,
+    "length": 1.5,
+    "stage": 1
+  }
 ];
