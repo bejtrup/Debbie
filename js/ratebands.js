@@ -7,10 +7,12 @@ $(function(){
       $this.addClass("fall");
       isAnimationOn = true;
       setTimeout(function(){
+        loadNextBand();
+      }, 600);
+      setTimeout(function(){
         $this.removeClass("fall");
         isAnimationOn = false;
-        loadNextBand();
-      }, 1200);
+      }, 1600);
     }
   });
 });
