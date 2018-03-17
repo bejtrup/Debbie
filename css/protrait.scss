@@ -72,14 +72,14 @@
 }
 @include keyframe(yeah) {
     0% {
-        transform: translate(-0, 0);
+        transform: translateX(0) translateY(0);
     }
     50% {
       //midt 33%
-      transform: translate(-33vw, 10vh);
+      transform: translateX(-33vw) translateY(15vh);
     }
     100% {
-        transform: translate(-33vw, 50vh);
+        transform: translateX(-33vw) translateY(50vh);
     }
 }
 

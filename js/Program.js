@@ -2,7 +2,11 @@ var date =  new Date;
 var time = parseInt(date.getHours()+""+date.getMinutes());
 var now = { day: 4, time: time };
 $( makeMusikProgram );
-$( function(){ settime(now) } );
+$( function(){
+  settime(now);
+  setTimeout(function(){ settime(now)  }, 60000 ); //10min.
+  }
+);
 
 function makeMusikProgram(){
     $.each(programArray, function(k,v){

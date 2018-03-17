@@ -11,10 +11,20 @@
   right: 0;
 }
 .program{
+  position: relative;
   height: 80%;
   margin-top: 7%;
-  min-width: 1850vw; // 300*6 + 50
+  min-width: 2500vw; // 300*8 + 100
   background: #fffdf0;
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    background: #6CC7C2;
+  }
 }
 .day{
   position: relative;
@@ -74,6 +84,7 @@
     margin: 0;
   }
 }
+//perspective( 60vw ) rotateY( -45deg ) rotateZ(-20deg) translateY(212%)
 .pee {
   background: #FCF562;
 }
