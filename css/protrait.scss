@@ -50,16 +50,16 @@
         transform: translateY(0);
     }
     95% {
-        transform: translateY(60vh);
-        width: 10vh;
-        height: 10vh;
-        margin-left: -5vh;
+        transform: translateY(60vh) scale(1,1);
+        // width: 10vh;
+        // height: 10vh;
+        // margin-left: -5vh;
     }
     100% {
-        transform: translateY(65vh);
-        width: 14vh;
-        height: 5vh;
-        margin-left: -7vh;
+        transform: translateY(65vh) scale(1.2,0.2);
+        // width: 14vh;
+        // height: 5vh;
+        // margin-left: -7vh;
     }
 }
 @include keyframe(meh) {

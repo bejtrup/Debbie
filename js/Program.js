@@ -42,3 +42,8 @@ function settime(now) {
 
   $(".program").css({"transform": "translateX(-"+left+"vw)"});
 }
+
+$(window).on('scroll', function(){
+  var day = now.day;
+  $("div#day_"day).find("div.band")
+});
