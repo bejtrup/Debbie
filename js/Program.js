@@ -65,6 +65,6 @@ function chk_scroll()
 }
 
 function goToNow(){
-  $("div#landscape").scrollLeft(0);
+  $("div#landscape").animate({scrollLeft: 0}, 700);
   return false;
 }
