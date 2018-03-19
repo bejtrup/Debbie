@@ -34,3 +34,13 @@ function getBandNameHtml(id){
   var day = bands[id].fullDate;
   return "<h1>"+name+"</h1><h4>"+day+"</h4><input type='hidden' name=''' value='"+id+"'>";
 }
+
+//  menu
+$(function(){
+  $("div#menubtn").on('click', function(){
+    $("#menu").addClass("out");
+  });
+  $("#close").on('click', function(){
+    $("#menu").removeClass("out");
+  });
+});

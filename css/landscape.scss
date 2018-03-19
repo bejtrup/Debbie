@@ -91,3 +91,31 @@
 .poo {
   background: #a26a2a;
 }
+
+.nowArrowWrapper{
+  position: fixed;
+  top: 93vh;
+  margin-left: 12.5%; //(100/8)
+  h4#nowArrowText{
+    color: #000;
+    display: inline-block;
+    margin: 0;
+    text-decoration: underline;
+    &.hidden{
+      display: none;
+    }
+  }
+}
+.nowArrow{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  transition: 0.5s;
+  &.left{
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+  }
+}
