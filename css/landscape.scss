@@ -1,8 +1,9 @@
 .can{
   position: fixed;
-  top: -19px;
-  height: 115%;
-  left: -44px;
+  top: 0;
+  height: 100%;
+  left: 0;
+  z-index: 100;
 }
 .wipeAss{
   position: fixed;
@@ -25,6 +26,15 @@
     width: 50vw;
     background: #6CC7C2;
   }
+  // &:before{
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 25vw;
+  //   width: 2px;
+  //   background: #e64f99;
+  // }
 }
 .day{
   position: relative;
@@ -104,7 +114,11 @@
 .nowArrowWrapper{
   position: fixed;
   top: 93vh;
-  margin-left: 12.5%; //(100/8)
+  margin-left: 23%; //(100/8)*2 -2% padding
+  z-index: 200;
+  padding: 2px 2%;
+  background: #e64f99;
+
   h4#nowArrowText{
     color: #000;
     display: inline-block;
