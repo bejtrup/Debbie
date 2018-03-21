@@ -33,7 +33,6 @@ html, body {
 .fullscreen.landscape{
   overflow-x: scroll;
   overflow-y: hidden;
-  left: 16vw;
 }
 @media screen and (orientation: portrait) {
   .fullscreen.protrait{
