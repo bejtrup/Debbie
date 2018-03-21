@@ -39,7 +39,7 @@ function settime(now) {
   var t = now.time == 0000 ? 2400 : now.time;
   var h = parseInt( t.toString().slice(0, -2) );
   var m = parseInt(t.toString().slice(-2)) * (100/8/60);
-  var left = (now.day * 300) + (h*(100/8)) - (100/8); // 10 = marginleft 300=bredden for en dag // 100/8 da der er 8 timer på en skærm
+  var left = (now.day * 300) + (h*(100/8)) - (100/4); // 10 = marginleft 300=bredden for en dag // 100/8 da der er 8 timer på en skærm
 
   left = left + m;
 
