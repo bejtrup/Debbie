@@ -11,6 +11,15 @@
   height: 100%;
   right: 0;
 }
+.programShadow{
+  position: fixed;
+      top: 0;
+      height: 100%;
+      width: 8vw;
+      left: 10vw;
+      z-index: 90;
+      background: linear-gradient(to right, #6cc8c2 0%,rgba(255,253,240,0) 100%);
+}
 .program{
   position: relative;
   height: 85vh;
