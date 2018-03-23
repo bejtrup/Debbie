@@ -18,10 +18,10 @@ function makeMusikProgram(){
          var m = parseInt(v.start.toString().slice(-2)) * 0.069444445;
          var left = h * 4.1666666667; // for hours
          left = left + m;
-         var length = 1.5 * 4.16666667;
+         var length = v.length * 4.16666667;
          var top = (v.stage) * (100/6);
-
-         var band = "<div class='band' style='left: "+left+"%; top:"+top+"%; width: "+length+"%;'><div><h4>"+v.name+"</h4><h6>kl"+ v.start +" ("+v.length+"t.) (scene "+v.stage+")</h6></div></div>";
+var vxvx = v.stage == 1 ? "One" : "Four";
+         var band = "<div class='band stange"+vxvx+"' style='left: "+left+"%; top:"+top+"%; width: "+length+"%;'><div><h4>"+v.name+"</h4><h6>kl"+ v.start +" ("+v.length+"t.) (scene "+v.stage+")</h6></div></div>";
          $("#day_"+v.day).append(band);
        }
     });
