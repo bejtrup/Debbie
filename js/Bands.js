@@ -40,24 +40,40 @@ var bands = [
     "fullDate": "Thursday 5\tJuly, 2018"
   },
   {
+    "name": "ADDISABABABAND",
+    "fullDate": "Sunday 1\tJuly, 2018"
+  },
+  {
+    "name": "ALBIN LEE MELDAU",
+    "fullDate": "Monday 2\tJuly, 2018"
+  },
+  {
+    "name": "ALCABEAN",
+    "fullDate": "Sunday 1\tJuly, 2018"
+  },
+  {
     "name": "ALEX VARGAS",
-    "fullDate": ""
+    "fullDate": "Friday 6\tJuly, 2018"
   },
   {
     "name": "AMMAR 808",
     "fullDate": "Friday 6\tJuly, 2018"
   },
   {
+    "name": "ARTIGEARDIT",
+    "fullDate": "Tuesday 3\tJuly, 2018"
+  },
+  {
     "name": "B FROM E",
-    "fullDate": ""
+    "fullDate": "Sunday 1\tJuly, 2018"
   },
   {
     "name": "BABY IN VAIN",
-    "fullDate": ""
+    "fullDate": "Friday 6\tJuly, 2018"
   },
   {
     "name": "BAIME",
-    "fullDate": ""
+    "fullDate": "Sunday 1\tJuly, 2018"
   },
   {
     "name": "BANKSLAVE",
@@ -69,7 +85,7 @@ var bands = [
   },
   {
     "name": "BISSE",
-    "fullDate": ""
+    "fullDate": "Friday 6\tJuly, 2018"
   },
   {
     "name": "6LACK",
@@ -89,7 +105,7 @@ var bands = [
   },
   {
     "name": "CABAL",
-    "fullDate": ""
+    "fullDate": "Monday 2\tJuly, 2018"
   },
   {
     "name": "CELESTE",
@@ -97,19 +113,31 @@ var bands = [
   },
   {
     "name": "CEZINANDO",
-    "fullDate": ""
+    "fullDate": "Thursday 5\tJuly, 2018"
   },
   {
     "name": "CHELSEA WOLFE",
-    "fullDate": ""
+    "fullDate": "Thursday 5\tJuly, 2018"
+  },
+  {
+    "name": "CLARISSA CONNELLY",
+    "fullDate": "Sunday 1\tJuly, 2018"
   },
   {
     "name": "CLUTCH",
     "fullDate": "Wednesday 4\tJuly, 2018"
   },
   {
+    "name": "CTRLS",
+    "fullDate": "Monday 2\tJuly, 2018"
+  },
+  {
     "name": "CV JØRGENSEN",
     "fullDate": "Saturday 7\tJuly, 2018"
+  },
+  {
+    "name": "DANIEL SAVI (Resident DJ)",
+    "fullDate": "Sunday 1\tJuly, 2018"
   },
   {
     "name": "DEAD CROSS",
@@ -120,12 +148,32 @@ var bands = [
     "fullDate": "Friday 6\tJuly, 2018"
   },
   {
+    "name": "DIRT FORGE",
+    "fullDate": "Sunday 1\tJuly, 2018"
+  },
+  {
+    "name": "DISCOTHÈQUE MOBUMFE (Resident DJ)",
+    "fullDate": "Tuesday 3\tJuly, 2018"
+  },
+  {
+    "name": "ECSTASY IN ORDER",
+    "fullDate": "Monday 2\tJuly, 2018"
+  },
+  {
+    "name": "EERA",
+    "fullDate": "Sunday 1\tJuly, 2018"
+  },
+  {
     "name": "EL LEOPARDO",
     "fullDate": "Thursday 5\tJuly, 2018"
   },
   {
+    "name": "ELLIS MAY",
+    "fullDate": "Tuesday 3\tJuly, 2018"
+  },
+  {
     "name": "EMIL KRUSE",
-    "fullDate": ""
+    "fullDate": "Sunday 1\tJuly, 2018"
   },
   {
     "name": "FEVER RAY",
@@ -141,27 +189,43 @@ var bands = [
   },
   {
     "name": "FOOL",
-    "fullDate": ""
+    "fullDate": "Tuesday 3\tJuly, 2018"
   },
   {
     "name": "FOUR TET",
     "fullDate": "Friday 6\tJuly, 2018"
   },
   {
+    "name": "FRAADS",
+    "fullDate": "Monday 2\tJuly, 2018"
+  },
+  {
     "name": "GOSS",
-    "fullDate": ""
+    "fullDate": "Monday 2\tJuly, 2018"
   },
   {
     "name": "GURLI OCTAVIA",
-    "fullDate": ""
+    "fullDate": "Monday 2\tJuly, 2018"
   },
   {
     "name": "HEILUNG",
     "fullDate": "Thursday 5\tJuly, 2018"
   },
   {
+    "name": "HOLM",
+    "fullDate": "Tuesday 3\tJuly, 2018"
+  },
+  {
     "name": "IRIS GOLD",
-    "fullDate": ""
+    "fullDate": "Tuesday 3\tJuly, 2018"
+  },
+  {
+    "name": "JADA",
+    "fullDate": "Sunday 1\tJuly, 2018"
+  },
+  {
+    "name": "JAKOB OGAWA",
+    "fullDate": "Tuesday 3\tJuly, 2018"
   },
   {
     "name": "JUANA MOLINA",
@@ -169,7 +233,7 @@ var bands = [
   },
   {
     "name": "KAKKMADDAFAKKA",
-    "fullDate": ""
+    "fullDate": "Wednesday 4\tJuly, 2018"
   },
   {
     "name": "KELLY LEE OWENS",
@@ -177,11 +241,15 @@ var bands = [
   },
   {
     "name": "KIPPENBERGER",
-    "fullDate": ""
+    "fullDate": "Monday 2\tJuly, 2018"
   },
   {
     "name": "KOKOKO!",
     "fullDate": "Saturday 7\tJuly, 2018"
+  },
+  {
+    "name": "KONNI KASS",
+    "fullDate": "Tuesday 3\tJuly, 2018"
   },
   {
     "name": "LAUREL HALO",
@@ -192,20 +260,40 @@ var bands = [
     "fullDate": "Friday 6\tJuly, 2018"
   },
   {
+    "name": "LOKE DEPH",
+    "fullDate": "Monday 2\tJuly, 2018"
+  },
+  {
+    "name": "LUSTER",
+    "fullDate": "Monday 2\tJuly, 2018"
+  },
+  {
+    "name": "LYRA VALENZA",
+    "fullDate": "Sunday 1\tJuly, 2018"
+  },
+  {
     "name": "LØD",
-    "fullDate": ""
+    "fullDate": "Tuesday 3\tJuly, 2018"
   },
   {
     "name": "±MAISMENOS±",
     "fullDate": ""
   },
   {
+    "name": "MARATON",
+    "fullDate": "Tuesday 3\tJuly, 2018"
+  },
+  {
     "name": "MARSHALL CECIL",
-    "fullDate": ""
+    "fullDate": "Tuesday 3\tJuly, 2018"
   },
   {
     "name": "MHD",
     "fullDate": "Saturday 7\tJuly, 2018"
+  },
+  {
+    "name": "MIRIAM BRYANT",
+    "fullDate": "Sunday 1\tJuly, 2018"
   },
   {
     "name": "MOGWAI",
@@ -214,6 +302,10 @@ var bands = [
   {
     "name": "MOTORSAV",
     "fullDate": "Thursday 5\tJuly, 2018"
+  },
+  {
+    "name": "MOUNT LIBERATION UNLIMITED",
+    "fullDate": "Monday 2\tJuly, 2018"
   },
   {
     "name": "MY BLOODY VALENTINE",
@@ -225,11 +317,11 @@ var bands = [
   },
   {
     "name": "NATHAN FAKE",
-    "fullDate": ""
+    "fullDate": "Wednesday 4\tJuly, 2018"
   },
   {
     "name": "NELSON CAN",
-    "fullDate": ""
+    "fullDate": "Thursday 5\tJuly, 2018"
   },
   {
     "name": "NYT LIV",
@@ -253,7 +345,7 @@ var bands = [
   },
   {
     "name": "PALE HONEY",
-    "fullDate": ""
+    "fullDate": "Monday 2\tJuly, 2018"
   },
   {
     "name": "PALM",
@@ -261,7 +353,7 @@ var bands = [
   },
   {
     "name": "PETER SOMMER",
-    "fullDate": ""
+    "fullDate": "Saturday 7\tJuly, 2018"
   },
   {
     "name": "PREOCCUPATIONS",
@@ -273,7 +365,7 @@ var bands = [
   },
   {
     "name": "ROME IS NOT A TOWN",
-    "fullDate": ""
+    "fullDate": "Monday 2\tJuly, 2018"
   },
   {
     "name": "SAMPHA",
@@ -285,11 +377,15 @@ var bands = [
   },
   {
     "name": "SASSY 009",
-    "fullDate": ""
+    "fullDate": "Sunday 1\tJuly, 2018"
   },
   {
     "name": "SCOUR",
     "fullDate": "Saturday 7\tJuly, 2018"
+  },
+  {
+    "name": "SIGMA",
+    "fullDate": "Tuesday 3\tJuly, 2018"
   },
   {
     "name": "SIGRID",
@@ -297,7 +393,11 @@ var bands = [
   },
   {
     "name": "SIMON LITTAUER",
-    "fullDate": ""
+    "fullDate": "Tuesday 3\tJuly, 2018"
+  },
+  {
+    "name": "SISTA BOSSEN",
+    "fullDate": "Sunday 1\tJuly, 2018"
   },
   {
     "name": "SLAVES",
@@ -305,11 +405,11 @@ var bands = [
   },
   {
     "name": "SLÆGT",
-    "fullDate": ""
+    "fullDate": "Sunday 1\tJuly, 2018"
   },
   {
     "name": "SMERZ",
-    "fullDate": ""
+    "fullDate": "Thursday 5\tJuly, 2018"
   },
   {
     "name": "ST. VINCENT",
@@ -328,8 +428,16 @@ var bands = [
     "fullDate": "Thursday 5\tJuly, 2018"
   },
   {
+    "name": "TAN",
+    "fullDate": "Tuesday 3\tJuly, 2018"
+  },
+  {
     "name": "THE MINDS OF 99",
-    "fullDate": ""
+    "fullDate": "Friday 6\tJuly, 2018"
+  },
+  {
+    "name": "TIGHT CHERRY (Resident DJ)",
+    "fullDate": "Monday 2\tJuly, 2018"
   },
   {
     "name": "TURBOLENS",
@@ -407,630 +515,819 @@ var programArray = [
     "name": "CHELSEA MANNING",
     "day": 5,
     "start": 2000,
-    "length": 1.5,
-    "stage": 1
+    "length": 2,
+    "stage": 5
   },
   {
     "name": "EMINEM",
     "day": 4,
-    "start": 130,
+    "start": 2000,
     "length": 2,
     "stage": 0
   },
   {
     "name": "BRUNO MARS",
     "day": 5,
-    "start": 2000,
+    "start": 2200,
     "length": 2,
-    "stage": 5
+    "stage": 4
   },
   {
     "name": "GORILLAZ",
     "day": 7,
-    "start": 2200,
+    "start": 100,
     "length": 1,
-    "stage": 2
+    "stage": 5
   },
   {
     "name": "NINE INCH NAILS",
     "day": 4,
-    "start": 1345,
+    "start": 900,
     "length": 1,
-    "stage": 2
+    "stage": 4
   },
   {
     "name": "CARDI B",
     "day": 4,
-    "start": 100,
-    "length": 1,
-    "stage": 4
+    "start": 900,
+    "length": 2,
+    "stage": 3
   },
   {
     "name": "DAVID BYRNE",
     "day": 6,
-    "start": 1345,
-    "length": 2,
-    "stage": 4
+    "start": 2200,
+    "length": 1,
+    "stage": 2
   },
   {
     "name": "KHALID",
     "day": 5,
-    "start": 2000,
-    "length": 1.5,
-    "stage": 1
+    "start": 2130,
+    "length": 1,
+    "stage": 0
   },
   {
     "name": "NEPHEW",
     "day": 5,
-    "start": 1300,
-    "length": 1.5,
-    "stage": 0
-  },
-  {
-    "name": "ALEX VARGAS",
-    "day": -1,
-    "start": 2000,
-    "length": 1,
-    "stage": 0
-  },
-  {
-    "name": "AMMAR 808",
-    "day": 6,
-    "start": 900,
-    "length": 1,
-    "stage": 1
-  },
-  {
-    "name": "B FROM E",
-    "day": -1,
-    "start": 900,
-    "length": 2,
-    "stage": 1
-  },
-  {
-    "name": "BABY IN VAIN",
-    "day": -1,
-    "start": 2000,
-    "length": 1,
-    "stage": 1
-  },
-  {
-    "name": "BAIME",
-    "day": -1,
-    "start": 2000,
-    "length": 1,
-    "stage": 5
-  },
-  {
-    "name": "BANKSLAVE",
-    "day": -1,
-    "start": 2000,
-    "length": 2,
-    "stage": 2
-  },
-  {
-    "name": "BENAL",
-    "day": 6,
-    "start": 900,
-    "length": 1,
-    "stage": 2
-  },
-  {
-    "name": "BISSE",
-    "day": -1,
-    "start": 2130,
-    "length": 1.5,
-    "stage": 0
-  },
-  {
-    "name": "6LACK",
-    "day": 5,
-    "start": 2200,
-    "length": 2,
-    "stage": 3
-  },
-  {
-    "name": "BLACK STAR",
-    "day": 5,
-    "start": 1345,
-    "length": 1.5,
-    "stage": 4
-  },
-  {
-    "name": "THE BLAZE",
-    "day": 4,
-    "start": 900,
-    "length": 2,
-    "stage": 0
-  },
-  {
-    "name": "BORIS & MERZBOW",
-    "day": 5,
-    "start": 1400,
-    "length": 1,
-    "stage": 5
-  },
-  {
-    "name": "CABAL",
-    "day": -1,
-    "start": 100,
-    "length": 2,
-    "stage": 1
-  },
-  {
-    "name": "CELESTE",
-    "day": 6,
-    "start": 1345,
-    "length": 1,
-    "stage": 3
-  },
-  {
-    "name": "CEZINANDO",
-    "day": -1,
-    "start": 100,
-    "length": 2,
-    "stage": 3
-  },
-  {
-    "name": "CHELSEA WOLFE",
-    "day": -1,
-    "start": 900,
-    "length": 2,
-    "stage": 2
-  },
-  {
-    "name": "CLUTCH",
-    "day": 4,
-    "start": 2000,
-    "length": 1,
-    "stage": 4
-  },
-  {
-    "name": "CV JØRGENSEN",
-    "day": 7,
-    "start": 2200,
-    "length": 1.5,
-    "stage": 2
-  },
-  {
-    "name": "DEAD CROSS",
-    "day": 6,
-    "start": 2130,
-    "length": 1,
-    "stage": 3
-  },
-  {
-    "name": "DESCENDENTS",
-    "day": 6,
-    "start": 100,
-    "length": 2,
-    "stage": 0
-  },
-  {
-    "name": "EL LEOPARDO",
-    "day": 5,
-    "start": 900,
-    "length": 1.5,
-    "stage": 3
-  },
-  {
-    "name": "EMIL KRUSE",
-    "day": -1,
-    "start": 2000,
-    "length": 1,
-    "stage": 4
-  },
-  {
-    "name": "FEVER RAY",
-    "day": 6,
     "start": 100,
     "length": 1,
     "stage": 4
   },
   {
-    "name": "FIRST AID KIT",
-    "day": 5,
-    "start": 1345,
-    "length": 2,
-    "stage": 4
-  },
-  {
-    "name": "FLEET FOXES",
-    "day": 6,
-    "start": 2200,
-    "length": 2,
-    "stage": 0
-  },
-  {
-    "name": "FOOL",
-    "day": -1,
-    "start": 900,
-    "length": 2,
-    "stage": 4
-  },
-  {
-    "name": "FOUR TET",
-    "day": 6,
-    "start": 2130,
-    "length": 1.5,
-    "stage": 5
-  },
-  {
-    "name": "GOSS",
-    "day": -1,
-    "start": 900,
-    "length": 1.5,
-    "stage": 5
-  },
-  {
-    "name": "GURLI OCTAVIA",
-    "day": -1,
-    "start": 2200,
-    "length": 1,
-    "stage": 2
-  },
-  {
-    "name": "HEILUNG",
-    "day": 5,
-    "start": 2130,
-    "length": 1,
-    "stage": 2
-  },
-  {
-    "name": "IRIS GOLD",
-    "day": -1,
-    "start": 2130,
-    "length": 2,
-    "stage": 3
-  },
-  {
-    "name": "JUANA MOLINA",
-    "day": 7,
-    "start": 900,
-    "length": 2,
-    "stage": 3
-  },
-  {
-    "name": "KAKKMADDAFAKKA",
-    "day": -1,
-    "start": 2200,
-    "length": 1,
-    "stage": 1
-  },
-  {
-    "name": "KELLY LEE OWENS",
-    "day": 7,
-    "start": 2200,
-    "length": 1,
-    "stage": 2
-  },
-  {
-    "name": "KIPPENBERGER",
-    "day": -1,
-    "start": 900,
-    "length": 1,
-    "stage": 3
-  },
-  {
-    "name": "KOKOKO!",
-    "day": 7,
-    "start": 2200,
-    "length": 2,
-    "stage": 0
-  },
-  {
-    "name": "LAUREL HALO",
-    "day": 6,
-    "start": 2000,
-    "length": 1.5,
-    "stage": 0
-  },
-  {
-    "name": "LEKHFA",
-    "day": 6,
-    "start": 900,
-    "length": 1,
-    "stage": 2
-  },
-  {
-    "name": "LØD",
-    "day": -1,
-    "start": 2200,
-    "length": 2,
-    "stage": 3
-  },
-  {
-    "name": "±MAISMENOS±",
-    "day": -1,
-    "start": 900,
-    "length": 1,
-    "stage": 2
-  },
-  {
-    "name": "MARSHALL CECIL",
-    "day": -1,
-    "start": 900,
-    "length": 1.5,
-    "stage": 0
-  },
-  {
-    "name": "MHD",
-    "day": 7,
-    "start": 2200,
-    "length": 2,
-    "stage": 3
-  },
-  {
-    "name": "MOGWAI",
-    "day": 7,
-    "start": 2200,
-    "length": 2,
-    "stage": 1
-  },
-  {
-    "name": "MOTORSAV",
-    "day": 5,
-    "start": 1345,
+    "name": "ADDISABABABAND",
+    "day": 1000,
+    "start": 100,
     "length": 2,
     "stage": 2
   },
   {
-    "name": "MY BLOODY VALENTINE",
-    "day": 5,
-    "start": 2000,
-    "length": 2,
-    "stage": 0
-  },
-  {
-    "name": "MYRKUR",
+    "name": "ALBIN LEE MELDAU",
     "day": 1000,
     "start": 2000,
     "length": 2,
     "stage": 3
   },
   {
-    "name": "NATHAN FAKE",
+    "name": "ALCABEAN",
+    "day": 1000,
+    "start": 100,
+    "length": 1.5,
+    "stage": 4
+  },
+  {
+    "name": "ALEX VARGAS",
+    "day": 6,
+    "start": 900,
+    "length": 1.5,
+    "stage": 5
+  },
+  {
+    "name": "AMMAR 808",
+    "day": 6,
+    "start": 2000,
+    "length": 1.5,
+    "stage": 4
+  },
+  {
+    "name": "ARTIGEARDIT",
+    "day": 1000,
+    "start": 2130,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "B FROM E",
+    "day": 1000,
+    "start": 2000,
+    "length": 1.5,
+    "stage": 0
+  },
+  {
+    "name": "BABY IN VAIN",
+    "day": 6,
+    "start": 900,
+    "length": 1,
+    "stage": 3
+  },
+  {
+    "name": "BAIME",
+    "day": 1000,
+    "start": 900,
+    "length": 1,
+    "stage": 3
+  },
+  {
+    "name": "BANKSLAVE",
     "day": -1,
-    "start": 1345,
+    "start": 2000,
     "length": 1,
     "stage": 2
   },
   {
-    "name": "NELSON CAN",
-    "day": -1,
+    "name": "BENAL",
+    "day": 6,
+    "start": 2200,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "BISSE",
+    "day": 6,
     "start": 1345,
+    "length": 1,
+    "stage": 5
+  },
+  {
+    "name": "6LACK",
+    "day": 5,
+    "start": 1345,
+    "length": 2,
+    "stage": 0
+  },
+  {
+    "name": "BLACK STAR",
+    "day": 5,
+    "start": 2130,
+    "length": 1,
+    "stage": 3
+  },
+  {
+    "name": "THE BLAZE",
+    "day": 4,
+    "start": 2130,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "BORIS & MERZBOW",
+    "day": 5,
+    "start": 2000,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "CABAL",
+    "day": 1000,
+    "start": 2200,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "CELESTE",
+    "day": 6,
+    "start": 1345,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "CEZINANDO",
+    "day": 5,
+    "start": 1345,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "CHELSEA WOLFE",
+    "day": 5,
+    "start": 100,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "CLARISSA CONNELLY",
+    "day": 1000,
+    "start": 1345,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "CLUTCH",
+    "day": 4,
+    "start": 2130,
+    "length": 1.5,
+    "stage": 4
+  },
+  {
+    "name": "CTRLS",
+    "day": 1000,
+    "start": 900,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "CV JØRGENSEN",
+    "day": 7,
+    "start": 2200,
+    "length": 1.5,
+    "stage": 3
+  },
+  {
+    "name": "DANIEL SAVI (Resident DJ)",
+    "day": 1000,
+    "start": 900,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "DEAD CROSS",
+    "day": 6,
+    "start": 2000,
+    "length": 1.5,
+    "stage": 4
+  },
+  {
+    "name": "DESCENDENTS",
+    "day": 6,
+    "start": 2200,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "DIRT FORGE",
+    "day": 1000,
+    "start": 2200,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "DISCOTHÈQUE MOBUMFE (Resident DJ)",
+    "day": 1000,
+    "start": 1345,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "ECSTASY IN ORDER",
+    "day": 1000,
+    "start": 2130,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "EERA",
+    "day": 1000,
+    "start": 2130,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "EL LEOPARDO",
+    "day": 5,
+    "start": 2130,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "ELLIS MAY",
+    "day": 1000,
+    "start": 2200,
     "length": 1.5,
     "stage": 2
   },
   {
+    "name": "EMIL KRUSE",
+    "day": 1000,
+    "start": 2000,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "FEVER RAY",
+    "day": 6,
+    "start": 900,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "FIRST AID KIT",
+    "day": 5,
+    "start": 2000,
+    "length": 2,
+    "stage": 5
+  },
+  {
+    "name": "FLEET FOXES",
+    "day": 6,
+    "start": 2200,
+    "length": 1.5,
+    "stage": 2
+  },
+  {
+    "name": "FOOL",
+    "day": 1000,
+    "start": 2200,
+    "length": 2,
+    "stage": 3
+  },
+  {
+    "name": "FOUR TET",
+    "day": 6,
+    "start": 900,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "FRAADS",
+    "day": 1000,
+    "start": 2130,
+    "length": 2,
+    "stage": 5
+  },
+  {
+    "name": "GOSS",
+    "day": 1000,
+    "start": 1345,
+    "length": 1.5,
+    "stage": 3
+  },
+  {
+    "name": "GURLI OCTAVIA",
+    "day": 1000,
+    "start": 2200,
+    "length": 1.5,
+    "stage": 0
+  },
+  {
+    "name": "HEILUNG",
+    "day": 5,
+    "start": 2000,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "HOLM",
+    "day": 1000,
+    "start": 2130,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "IRIS GOLD",
+    "day": 1000,
+    "start": 100,
+    "length": 1,
+    "stage": 5
+  },
+  {
+    "name": "JADA",
+    "day": 1000,
+    "start": 2200,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "JAKOB OGAWA",
+    "day": 1000,
+    "start": 2200,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "JUANA MOLINA",
+    "day": 7,
+    "start": 2000,
+    "length": 1,
+    "stage": 5
+  },
+  {
+    "name": "KAKKMADDAFAKKA",
+    "day": 4,
+    "start": 100,
+    "length": 2,
+    "stage": 4
+  },
+  {
+    "name": "KELLY LEE OWENS",
+    "day": 7,
+    "start": 2200,
+    "length": 2,
+    "stage": 1
+  },
+  {
+    "name": "KIPPENBERGER",
+    "day": 1000,
+    "start": 1345,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "KOKOKO!",
+    "day": 7,
+    "start": 2000,
+    "length": 1.5,
+    "stage": 2
+  },
+  {
+    "name": "KONNI KASS",
+    "day": 1000,
+    "start": 1345,
+    "length": 2,
+    "stage": 5
+  },
+  {
+    "name": "LAUREL HALO",
+    "day": 6,
+    "start": 2130,
+    "length": 2,
+    "stage": 5
+  },
+  {
+    "name": "LEKHFA",
+    "day": 6,
+    "start": 100,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "LOKE DEPH",
+    "day": 1000,
+    "start": 2130,
+    "length": 1.5,
+    "stage": 5
+  },
+  {
+    "name": "LUSTER",
+    "day": 1000,
+    "start": 2000,
+    "length": 1,
+    "stage": 5
+  },
+  {
+    "name": "LYRA VALENZA",
+    "day": 1000,
+    "start": 2130,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "LØD",
+    "day": 1000,
+    "start": 900,
+    "length": 1.5,
+    "stage": 5
+  },
+  {
+    "name": "±MAISMENOS±",
+    "day": -1,
+    "start": 900,
+    "length": 1.5,
+    "stage": 0
+  },
+  {
+    "name": "MARATON",
+    "day": 1000,
+    "start": 100,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "MARSHALL CECIL",
+    "day": 1000,
+    "start": 1345,
+    "length": 1,
+    "stage": 3
+  },
+  {
+    "name": "MHD",
+    "day": 7,
+    "start": 900,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "MIRIAM BRYANT",
+    "day": 1000,
+    "start": 100,
+    "length": 2,
+    "stage": 5
+  },
+  {
+    "name": "MOGWAI",
+    "day": 7,
+    "start": 2000,
+    "length": 1,
+    "stage": 3
+  },
+  {
+    "name": "MOTORSAV",
+    "day": 5,
+    "start": 900,
+    "length": 1.5,
+    "stage": 1
+  },
+  {
+    "name": "MOUNT LIBERATION UNLIMITED",
+    "day": 1000,
+    "start": 900,
+    "length": 1,
+    "stage": 0
+  },
+  {
+    "name": "MY BLOODY VALENTINE",
+    "day": 5,
+    "start": 2200,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "MYRKUR",
+    "day": 1000,
+    "start": 2200,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "NATHAN FAKE",
+    "day": 4,
+    "start": 900,
+    "length": 2,
+    "stage": 1
+  },
+  {
+    "name": "NELSON CAN",
+    "day": 5,
+    "start": 2000,
+    "length": 1.5,
+    "stage": 3
+  },
+  {
     "name": "NYT LIV",
     "day": 5,
-    "start": 100,
+    "start": 900,
     "length": 1.5,
     "stage": 1
   },
   {
     "name": "ODESZA",
     "day": 6,
-    "start": 900,
-    "length": 1.5,
-    "stage": 0
+    "start": 1345,
+    "length": 1,
+    "stage": 1
   },
   {
     "name": "OH SEES",
     "day": 5,
-    "start": 1800,
-    "length": 2,
-    "stage": 3
+    "start": 900,
+    "length": 1.5,
+    "stage": 0
   },
   {
     "name": "OMNI",
     "day": 7,
     "start": 100,
-    "length": 1.5,
-    "stage": 3
+    "length": 2,
+    "stage": 4
   },
   {
     "name": "OND TRO",
     "day": 5,
-    "start": 1345,
-    "length": 1,
-    "stage": 2
+    "start": 2130,
+    "length": 1.5,
+    "stage": 4
   },
   {
     "name": "PALE HONEY",
-    "day": -1,
-    "start": 900,
+    "day": 1000,
+    "start": 2200,
     "length": 1.5,
-    "stage": 4
+    "stage": 2
   },
   {
     "name": "PALM",
     "day": 7,
-    "start": 100,
+    "start": 1345,
     "length": 2,
-    "stage": 2
+    "stage": 3
   },
   {
     "name": "PETER SOMMER",
-    "day": -1,
+    "day": 7,
     "start": 2200,
-    "length": 1,
-    "stage": 5
+    "length": 1.5,
+    "stage": 4
   },
   {
     "name": "PREOCCUPATIONS",
     "day": 5,
-    "start": 100,
+    "start": 2130,
     "length": 1.5,
-    "stage": 1
+    "stage": 2
   },
   {
     "name": "REGELBAU PRESENTS CENTRAL + DJ SPORTS + C.K + MANMADE DEEJAY",
     "day": 5,
-    "start": 2200,
-    "length": 1,
-    "stage": 0
+    "start": 900,
+    "length": 2,
+    "stage": 3
   },
   {
     "name": "ROME IS NOT A TOWN",
-    "day": -1,
-    "start": 2130,
-    "length": 1,
-    "stage": 4
+    "day": 1000,
+    "start": 1345,
+    "length": 1.5,
+    "stage": 5
   },
   {
     "name": "SAMPHA",
     "day": 6,
-    "start": 2200,
+    "start": 2130,
     "length": 1,
-    "stage": 0
+    "stage": 3
   },
   {
     "name": "(SANDY) ALEX G",
     "day": 6,
-    "start": 1345,
-    "length": 1.5,
-    "stage": 3
+    "start": 2200,
+    "length": 2,
+    "stage": 1
   },
   {
     "name": "SASSY 009",
-    "day": -1,
-    "start": 2200,
+    "day": 1000,
+    "start": 2000,
     "length": 1,
-    "stage": 5
+    "stage": 0
   },
   {
     "name": "SCOUR",
     "day": 7,
-    "start": 2000,
+    "start": 2200,
     "length": 2,
-    "stage": 5
+    "stage": 1
+  },
+  {
+    "name": "SIGMA",
+    "day": 1000,
+    "start": 900,
+    "length": 1,
+    "stage": 0
   },
   {
     "name": "SIGRID",
     "day": 7,
-    "start": 100,
-    "length": 1.5,
-    "stage": 1
+    "start": 900,
+    "length": 1,
+    "stage": 3
   },
   {
     "name": "SIMON LITTAUER",
-    "day": -1,
-    "start": 2000,
+    "day": 1000,
+    "start": 2200,
+    "length": 2,
+    "stage": 2
+  },
+  {
+    "name": "SISTA BOSSEN",
+    "day": 1000,
+    "start": 2200,
     "length": 1.5,
-    "stage": 1
+    "stage": 5
   },
   {
     "name": "SLAVES",
     "day": 7,
     "start": 2130,
     "length": 1.5,
-    "stage": 2
+    "stage": 3
   },
   {
     "name": "SLÆGT",
-    "day": -1,
-    "start": 2000,
-    "length": 1,
-    "stage": 0
+    "day": 1000,
+    "start": 2130,
+    "length": 2,
+    "stage": 2
   },
   {
     "name": "SMERZ",
-    "day": -1,
+    "day": 5,
+    "start": 100,
+    "length": 1.5,
+    "stage": 2
+  },
+  {
+    "name": "ST. VINCENT",
+    "day": 4,
+    "start": 100,
+    "length": 1,
+    "stage": 4
+  },
+  {
+    "name": "STEFFLON DON",
+    "day": 6,
+    "start": 100,
+    "length": 1,
+    "stage": 1
+  },
+  {
+    "name": "STORMZY",
+    "day": 5,
+    "start": 2200,
+    "length": 1,
+    "stage": 5
+  },
+  {
+    "name": "SUPERORGANISM",
+    "day": 5,
+    "start": 2130,
+    "length": 2,
+    "stage": 5
+  },
+  {
+    "name": "TAN",
+    "day": 1000,
+    "start": 1345,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "THE MINDS OF 99",
+    "day": 6,
+    "start": 1345,
+    "length": 1,
+    "stage": 2
+  },
+  {
+    "name": "TIGHT CHERRY (Resident DJ)",
+    "day": 1000,
     "start": 100,
     "length": 1.5,
     "stage": 4
   },
   {
-    "name": "ST. VINCENT",
-    "day": 4,
-    "start": 2000,
-    "length": 1,
-    "stage": 1
-  },
-  {
-    "name": "STEFFLON DON",
-    "day": 6,
-    "start": 2130,
-    "length": 1.5,
-    "stage": 2
-  },
-  {
-    "name": "STORMZY",
-    "day": 5,
-    "start": 1900,
-    "length": 2,
-    "stage": 4
-  },
-  {
-    "name": "SUPERORGANISM",
-    "day": 5,
-    "start": 1700,
-    "length": 1,
-    "stage": 0
-  },
-  {
-    "name": "THE MINDS OF 99",
-    "day": -1,
-    "start": 2200,
-    "length": 2,
-    "stage": 5
-  },
-  {
     "name": "TURBOLENS",
     "day": 5,
-    "start": 900,
-    "length": 1.5,
-    "stage": 2
+    "start": 2130,
+    "length": 1,
+    "stage": 1
   },
   {
     "name": "VETO",
     "day": 7,
-    "start": 2130,
-    "length": 2,
-    "stage": 2
+    "start": 2000,
+    "length": 1.5,
+    "stage": 5
   },
   {
     "name": "VINCE STAPLES",
     "day": 7,
-    "start": 900,
-    "length": 1,
-    "stage": 1
+    "start": 2000,
+    "length": 1.5,
+    "stage": 3
   },
   {
     "name": "WATAIN",
     "day": 6,
-    "start": 1345,
+    "start": 2000,
     "length": 2,
-    "stage": 3
+    "stage": 5
   },
   {
     "name": "WILKINSON",
     "day": 5,
-    "start": 2130,
-    "length": 2,
-    "stage": 4
+    "start": 100,
+    "length": 1.5,
+    "stage": 3
   },
   {
     "name": "YASMINE HAMDAN",
     "day": 5,
-    "start": 2400,
+    "start": 2200,
     "length": 1,
-    "stage": 1
+    "stage": 2
   },
   {
     "name": "YASUAKI SHIMIZU",
     "day": 6,
-    "start": 900,
+    "start": 2200,
     "length": 1,
-    "stage": 4
+    "stage": 1
   },
   {
     "name": "YONAKA",
     "day": 7,
-    "start": 900,
-    "length": 1.5,
-    "stage": 1
+    "start": 2200,
+    "length": 2,
+    "stage": 4
   }
 ];

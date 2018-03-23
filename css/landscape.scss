@@ -13,11 +13,12 @@
 }
 .program{
   position: relative;
-  height: 80%;
-  margin-top: 7%;
+  height: 85vh;
   min-width: 2500vw; // 300*8 + 100
   background: #fffdf0;
   outline: inset 4px #000;
+  padding-top: 10vh;
+  box-sizing: border-box;
   &:after{
     content: "";
     position: absolute;
@@ -39,11 +40,22 @@
 }
 .day{
   position: relative;
-  border-right: 3px dashed #6cc8c2;
   display: inline-block;
   float: left;
   width: 300vw; /*2400 / 8 = 300*/
   height: 100%;
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -2px;
+    width: 4px;
+    //background: #6cc8c2;
+    background-image: linear-gradient(to bottom, #e2f1d4 50%, #000 0%);
+    background-position: left;
+    background-size: 8px 40px;
+    background-repeat: repeat-y;  }
 }
 .hourWrapper{
   position: absolute;
@@ -71,7 +83,7 @@
 .hour::before {
     content: attr(data-time);
     position: absolute;
-    bottom: 102%;
+    top: -10vh;
     left: -5vw;
     width: 10vw;
     text-align: center;
@@ -95,6 +107,7 @@
   margin: 0;
   padding: 0;
   min-height: 16.666667%;
+  transition: .5s;
   z-index: 10;
   h4 {
     margin: 0;
@@ -111,7 +124,6 @@
 .poo {
   background: #a26a2a;
 }
-
 .nowArrowWrapper{
   position: fixed;
   top: 93vh;
