@@ -10,9 +10,22 @@
   top: 0;
   height: 100%;
   right: 0;
+  z-index: 100;
+}
+.SkamLepos{
+  position: fixed;
+  top: 50%;
+  height: 15vh;
+  width: 20vh;
+  margin-top: -5vh;
+  right: -20vh;
+  background: #e64f99;
+  z-index: 99;
+  border-radius: 10vh;
+  border: 4px solid #000;
 }
 .programShadow{
-  position: fixed;
+      position: fixed;
       top: 0;
       height: 100%;
       width: 8vw;
@@ -31,8 +44,9 @@
   &:after{
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: -4px;
+    bottom: -4px;
+    border-left: 4px solid #000;
     right: 0;
     width: 50vw;
     background: #6CC7C2;
@@ -136,7 +150,7 @@
 .nowArrowWrapper{
   position: fixed;
   top: 93vh;
-  margin-left: 24%;//(100/8)*2 -1% padding
+  margin-left: 22%;//(100/8)*2 -3% padding
   z-index: 200;
   padding: 2px 2% 50px 2%;
   border-radius: 13px;

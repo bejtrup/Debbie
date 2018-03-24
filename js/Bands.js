@@ -1230,7 +1230,7 @@ var programArray = [
     "day": 4,
     "start": 100,
     "length": 1,
-    "stage": 4
+    "stage": 0
   },
   {
     "name": "STEFFLON DON",
