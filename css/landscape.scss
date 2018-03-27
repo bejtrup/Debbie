@@ -4,6 +4,9 @@
   height: 100%;
   left: 0;
   z-index: 100;
+  &.bottom{
+    z-index: 1;
+  }
 }
 .wipeAss{
   position: fixed;
@@ -28,10 +31,10 @@
       position: fixed;
       top: 0;
       height: 100%;
-      width: 8vw;
-      left: 10vw;
+      width: 14vw;
+      left: 7vw;
       z-index: 90;
-      background: linear-gradient(to right, #6cc8c2 0%,rgba(255,253,240,0) 100%);
+      background: linear-gradient(to right, #6cc8c2 50%,rgba(255,253,240,0) 100%);
 }
 .program{
   position: relative;
@@ -41,6 +44,7 @@
   outline: inset 4px #000;
   padding-top: 10vh;
   box-sizing: border-box;
+  z-index: 10;
   &:after{
     content: "";
     position: absolute;
