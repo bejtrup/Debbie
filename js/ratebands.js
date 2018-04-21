@@ -30,10 +30,12 @@ function loadNextBand(){
   }, 700);
 }
 function getBandNameHtml(id){
-  var name = bands[id].name;
-  var day = bands[id].fullDate;
+  var name = programArray[id].name;
+  var day = programArray[id].date;
   return "<h1>"+name+"</h1><h4>"+day+"</h4><input type='hidden' name=''' value='"+id+"'>";
 }
+
+
 
 //  menu
 $(function(){

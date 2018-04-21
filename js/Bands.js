@@ -785,1148 +785,1350 @@ var bands = [
 //   if(fd == "Saturday 7\tJuly, 2018") return 7;
 //   return 1000;
 // }
+// function getDayName(fd) {
+//     if(fd == -1) return "Ved det ikke endnu";
+//     if(fd == 0 ) return "Lørdag, 30. juni";
+//     if(fd == 1 ) return "Søndag, 1. juli";
+//     if(fd == 2) return "Mandag, 2. juli";
+//     if(fd == 3) return "Tirsdag, 3. juli";;
+//     if(fd == 4) return "Onsdag, 4. juli";
+//     if(fd == 5) return "Torsdag, 5. juli";
+//     if(fd == 6) return "Fredag, 6. juli";
+//     if(fd == 8) return "Lørdag, 7. juli";
+//     return "uuuhhhh ved det ikke";
+// }
 // 30 juni - 7 july
 // lørdag - lørdag
 
-var = [
+var programArray = [
   {
     "name": "EMINEM",
     "day": 4,
-    "start": 900,
-    "stage": 5
+    "date": "Onsdag, 4. juli",
+    "start": 1345,
+    "stage": 3
   },
   {
     "name": "BRUNO MARS",
     "day": 5,
-    "start": 100,
-    "stage": 3
+    "date": "Torsdag, 5. juli",
+    "start": 2000,
+    "stage": 4
   },
   {
     "name": "GORILLAZ",
     "day": 7,
-    "start": 2000,
+    "date": "Lørdag, 7. juli",
+    "start": 1345,
     "stage": 2
   },
   {
     "name": "NICK CAVE & THE BAD SEEDS",
     "day": 6,
+    "date": "Fredag, 6. juli",
     "start": 2200,
-    "stage": 1
+    "stage": 5
   },
   {
     "name": "NINE INCH NAILS",
     "day": 4,
-    "start": 900,
-    "stage": 3
+    "date": "Onsdag, 4. juli",
+    "start": 2200,
+    "stage": 4
   },
   {
     "name": "MASSIVE ATTACK",
     "day": 6,
-    "start": 2200,
-    "stage": 2
+    "date": "Fredag, 6. juli",
+    "start": 1345,
+    "stage": 3
   },
   {
     "name": "DAVID BYRNE",
     "day": 6,
-    "start": 100,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 0
   },
   {
     "name": "DUA LIPA",
     "day": 7,
-    "start": 900,
-    "stage": 4
+    "date": "Lørdag, 7. juli",
+    "start": 100,
+    "stage": 3
   },
   {
     "name": "NEPHEW",
     "day": 5,
-    "start": 900,
-    "stage": 2
+    "date": "Torsdag, 5. juli",
+    "start": 2000,
+    "stage": 3
   },
   {
     "name": "ALEX VARGAS",
     "day": 6,
-    "start": 100,
-    "stage": 4
+    "date": "Fredag, 6. juli",
+    "start": 900,
+    "stage": 5
   },
   {
     "name": "ANDERSON .PAAK & THE FREE NATIONALS",
     "day": 7,
-    "start": 2000,
-    "stage": 0
+    "date": "Lørdag, 7. juli",
+    "start": 1345,
+    "stage": 3
   },
   {
     "name": "BEN FROST",
     "day": 5,
-    "start": 100,
-    "stage": 1
+    "date": "Torsdag, 5. juli",
+    "start": 1345,
+    "stage": 2
   },
   {
     "name": "BLACK STAR",
     "day": 5,
-    "start": 900,
-    "stage": 2
+    "date": "Torsdag, 5. juli",
+    "start": 2000,
+    "stage": 3
   },
   {
     "name": "CHARLOTTE GAINSBOURG",
     "day": 4,
-    "start": 1345,
-    "stage": 1
+    "date": "Onsdag, 4. juli",
+    "start": 2130,
+    "stage": 4
   },
   {
     "name": "CV JØRGENSEN",
     "day": 7,
-    "start": 100,
-    "stage": 0
+    "date": "Lørdag, 7. juli",
+    "start": 2130,
+    "stage": 5
   },
   {
     "name": "DESCENDENTS",
     "day": 6,
+    "date": "Fredag, 6. juli",
     "start": 2130,
-    "stage": 5
+    "stage": 3
   },
   {
     "name": "FEVER RAY",
     "day": 6,
-    "start": 2200,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 900,
+    "stage": 0
   },
   {
     "name": "FIRST AID KIT",
     "day": 5,
+    "date": "Torsdag, 5. juli",
     "start": 100,
-    "stage": 3
+    "stage": 0
   },
   {
     "name": "FLEET FOXES",
     "day": 6,
+    "date": "Fredag, 6. juli",
     "start": 2130,
-    "stage": 4
+    "stage": 3
   },
   {
     "name": "FOUR TET",
     "day": 6,
-    "start": 2200,
-    "stage": 5
+    "date": "Fredag, 6. juli",
+    "start": 2130,
+    "stage": 3
   },
   {
     "name": "INTERPOL",
     "day": 5,
-    "start": 2200,
-    "stage": 3
+    "date": "Torsdag, 5. juli",
+    "start": 100,
+    "stage": 1
   },
   {
     "name": "JOEY BADA$$",
     "day": 6,
-    "start": 2130,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 2000,
+    "stage": 2
   },
   {
     "name": "KHALID",
     "day": 5,
-    "start": 1345,
-    "stage": 1
+    "date": "Torsdag, 5. juli",
+    "start": 100,
+    "stage": 2
   },
   {
     "name": "MIKE SKINNER & MURKAGE PRESENT TONGA",
     "day": 7,
-    "start": 1345,
-    "stage": 3
+    "date": "Lørdag, 7. juli",
+    "start": 2200,
+    "stage": 2
   },
   {
     "name": "MOGWAI",
     "day": 7,
+    "date": "Lørdag, 7. juli",
     "start": 2130,
-    "stage": 2
+    "stage": 0
   },
   {
     "name": "MY BLOODY VALENTINE",
     "day": 5,
-    "start": 900,
-    "stage": 4
+    "date": "Torsdag, 5. juli",
+    "start": 2200,
+    "stage": 1
   },
   {
     "name": "ODESZA",
     "day": 6,
-    "start": 2130,
-    "stage": 4
+    "date": "Fredag, 6. juli",
+    "start": 2000,
+    "stage": 5
   },
   {
     "name": "PABLO MOSES",
     "day": 6,
-    "start": 2130,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 3
   },
   {
     "name": "ST. VINCENT",
     "day": 4,
-    "start": 2000,
-    "stage": 0
+    "date": "Onsdag, 4. juli",
+    "start": 100,
+    "stage": 4
   },
   {
     "name": "STONE SOUR",
     "day": 5,
-    "start": 2130,
+    "date": "Torsdag, 5. juli",
+    "start": 100,
     "stage": 4
   },
   {
     "name": "STORMZY",
     "day": 5,
-    "start": 2000,
-    "stage": 0
+    "date": "Torsdag, 5. juli",
+    "start": 900,
+    "stage": 1
   },
   {
     "name": "THE MINDS OF 99",
     "day": 6,
-    "start": 2000,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 2
   },
   {
     "name": "VINCE STAPLES",
     "day": 7,
-    "start": 2200,
-    "stage": 0
+    "date": "Lørdag, 7. juli",
+    "start": 2130,
+    "stage": 1
   },
   {
     "name": "WHEN SAINTS GO MACHINE",
     "day": 5,
-    "start": 900,
-    "stage": 2
+    "date": "Torsdag, 5. juli",
+    "start": 2200,
+    "stage": 4
   },
   {
     "name": "AMMAR 808",
     "day": 6,
-    "start": 2200,
-    "stage": 3
+    "date": "Fredag, 6. juli",
+    "start": 100,
+    "stage": 5
   },
   {
     "name": "ANDA UNION",
     "day": 6,
+    "date": "Fredag, 6. juli",
     "start": 1345,
-    "stage": 0
+    "stage": 3
   },
   {
     "name": "ANNE HAANING",
     "day": -1,
-    "start": 1345,
-    "stage": 2
+    "date": "Ved det ikke endnu",
+    "start": 2200,
+    "stage": 3
   },
   {
     "name": "BABY IN VAIN",
     "day": 6,
-    "start": 900,
-    "stage": 0
+    "date": "Fredag, 6. juli",
+    "start": 1345,
+    "stage": 3
   },
   {
     "name": "BANKSLAVE",
     "day": -1,
-    "start": 100,
-    "stage": 1
+    "date": "Ved det ikke endnu",
+    "start": 1345,
+    "stage": 2
   },
   {
     "name": "BCUC",
     "day": 4,
-    "start": 2200,
+    "date": "Onsdag, 4. juli",
+    "start": 2000,
     "stage": 2
   },
   {
     "name": "BELLY",
     "day": 5,
-    "start": 2200,
-    "stage": 2
+    "date": "Torsdag, 5. juli",
+    "start": 2000,
+    "stage": 1
   },
   {
     "name": "BENAL",
     "day": 6,
-    "start": 900,
-    "stage": 5
+    "date": "Fredag, 6. juli",
+    "start": 2130,
+    "stage": 1
   },
   {
     "name": "BISSE",
     "day": 6,
-    "start": 2130,
-    "stage": 5
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 4
   },
   {
     "name": "BITORI",
     "day": 5,
-    "start": 1345,
-    "stage": 0
+    "date": "Torsdag, 5. juli",
+    "start": 2130,
+    "stage": 5
   },
   {
     "name": "6LACK",
     "day": 5,
-    "start": 100,
-    "stage": 2
+    "date": "Torsdag, 5. juli",
+    "start": 1345,
+    "stage": 1
   },
   {
     "name": "THE BLAZE",
     "day": 4,
-    "start": 100,
-    "stage": 3
+    "date": "Onsdag, 4. juli",
+    "start": 900,
+    "stage": 4
   },
   {
     "name": "BORIS & MERZBOW",
     "day": 5,
-    "start": 100,
+    "date": "Torsdag, 5. juli",
+    "start": 900,
     "stage": 2
   },
   {
     "name": "CELESTE",
     "day": 6,
-    "start": 1345,
-    "stage": 5
+    "date": "Fredag, 6. juli",
+    "start": 2130,
+    "stage": 1
   },
   {
     "name": "CEZINANDO",
     "day": 5,
-    "start": 2000,
-    "stage": 3
+    "date": "Torsdag, 5. juli",
+    "start": 1345,
+    "stage": 1
   },
   {
     "name": "CHELSEA MANNING",
     "day": 5,
-    "start": 900,
-    "stage": 2
+    "date": "Torsdag, 5. juli",
+    "start": 2130,
+    "stage": 3
   },
   {
     "name": "CHELSEA WOLFE",
     "day": 5,
+    "date": "Torsdag, 5. juli",
     "start": 900,
-    "stage": 4
+    "stage": 2
   },
   {
     "name": "CLUTCH",
     "day": 4,
+    "date": "Onsdag, 4. juli",
     "start": 1345,
     "stage": 1
   },
   {
     "name": "DANNY BROWN",
     "day": 7,
-    "start": 100,
-    "stage": 0
+    "date": "Lørdag, 7. juli",
+    "start": 1345,
+    "stage": 3
   },
   {
     "name": "DARK TRANQUILITY",
     "day": 4,
+    "date": "Onsdag, 4. juli",
     "start": 2130,
     "stage": 4
   },
   {
     "name": "DE UNDERJORDISKE X FRIBYTTERDRØMME",
     "day": 7,
-    "start": 1345,
-    "stage": 4
+    "date": "Lørdag, 7. juli",
+    "start": 100,
+    "stage": 5
   },
   {
     "name": "DEAD CROSS",
     "day": 6,
-    "start": 1345,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 2130,
+    "stage": 5
   },
   {
     "name": "DEBO BAND",
     "day": 4,
-    "start": 100,
-    "stage": 4
+    "date": "Onsdag, 4. juli",
+    "start": 2200,
+    "stage": 5
   },
   {
     "name": "DJ RASHIDA",
     "day": 5,
-    "start": 1345,
-    "stage": 1
+    "date": "Torsdag, 5. juli",
+    "start": 900,
+    "stage": 4
   },
   {
     "name": "DONA ONETE",
     "day": 5,
-    "start": 2200,
-    "stage": 4
+    "date": "Torsdag, 5. juli",
+    "start": 1345,
+    "stage": 1
   },
   {
     "name": "THE DWARFS OF EAST AGOUZA",
     "day": 5,
-    "start": 2000,
+    "date": "Torsdag, 5. juli",
+    "start": 2200,
     "stage": 4
   },
   {
     "name": "EL LEOPARDO",
     "day": 5,
-    "start": 100,
-    "stage": 5
+    "date": "Torsdag, 5. juli",
+    "start": 2130,
+    "stage": 2
   },
   {
     "name": "EQUIKNOXX FEAT. SHANIQUE MARIE",
     "day": 6,
-    "start": 2000,
-    "stage": 4
+    "date": "Fredag, 6. juli",
+    "start": 2130,
+    "stage": 3
   },
   {
     "name": "GAMELAN SALUKAT",
     "day": 5,
-    "start": 100,
-    "stage": 4
+    "date": "Torsdag, 5. juli",
+    "start": 2130,
+    "stage": 1
   },
   {
     "name": "HEILUNG",
     "day": 5,
-    "start": 2200,
-    "stage": 1
+    "date": "Torsdag, 5. juli",
+    "start": 2000,
+    "stage": 2
   },
   {
     "name": "HOUSE GOSPEL CHOIR",
     "day": 7,
+    "date": "Lørdag, 7. juli",
     "start": 1345,
-    "stage": 4
+    "stage": 1
   },
   {
     "name": "THE HUNNA",
     "day": 6,
-    "start": 2200,
+    "date": "Fredag, 6. juli",
+    "start": 900,
     "stage": 2
   },
   {
     "name": "HVAD",
     "day": -1,
-    "start": 2200,
-    "stage": 0
+    "date": "Ved det ikke endnu",
+    "start": 1345,
+    "stage": 2
   },
   {
     "name": "I’M WITH HER",
     "day": 4,
-    "start": 900,
-    "stage": 3
+    "date": "Onsdag, 4. juli",
+    "start": 2000,
+    "stage": 5
   },
   {
     "name": "JAMES HOLDEN AND THE ANIMAL SPIRITS",
     "day": 6,
-    "start": 100,
-    "stage": 3
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 2
   },
   {
     "name": "JILLIAN MAYER",
     "day": -1,
-    "start": 100,
-    "stage": 4
+    "date": "Ved det ikke endnu",
+    "start": 2200,
+    "stage": 5
   },
   {
     "name": "JOHN MAUS",
     "day": 7,
-    "start": 2000,
-    "stage": 2
+    "date": "Lørdag, 7. juli",
+    "start": 1345,
+    "stage": 5
   },
   {
     "name": "JUANA MOLINA",
     "day": 7,
-    "start": 2000,
-    "stage": 0
-  },
-  {
-    "name": "JUJU & JORDASH",
-    "day": 5,
-    "start": 2130,
-    "stage": 0
-  },
-  {
-    "name": "JUSTIN SHOULDER & CORIN",
-    "day": -1,
-    "start": 900,
-    "stage": 1
-  },
-  {
-    "name": "KAKKMADDAFAKKA",
-    "day": 4,
-    "start": 900,
-    "stage": 2
-  },
-  {
-    "name": "KALI UCHIS",
-    "day": 7,
+    "date": "Lørdag, 7. juli",
     "start": 900,
     "stage": 3
   },
   {
+    "name": "JUJU & JORDASH",
+    "day": 5,
+    "date": "Torsdag, 5. juli",
+    "start": 1345,
+    "stage": 2
+  },
+  {
+    "name": "JUSTIN SHOULDER & CORIN",
+    "day": -1,
+    "date": "Ved det ikke endnu",
+    "start": 900,
+    "stage": 4
+  },
+  {
+    "name": "KAKKMADDAFAKKA",
+    "day": 4,
+    "date": "Onsdag, 4. juli",
+    "start": 2130,
+    "stage": 5
+  },
+  {
+    "name": "KALI UCHIS",
+    "day": 7,
+    "date": "Lørdag, 7. juli",
+    "start": 2200,
+    "stage": 4
+  },
+  {
     "name": "KEDR LIVANSKIY",
     "day": 7,
-    "start": 100,
+    "date": "Lørdag, 7. juli",
+    "start": 2130,
     "stage": 1
   },
   {
     "name": "KELLY LEE OWENS",
     "day": 7,
-    "start": 1345,
-    "stage": 4
+    "date": "Lørdag, 7. juli",
+    "start": 2000,
+    "stage": 3
   },
   {
     "name": "KIRSTEN ASTRUP",
     "day": -1,
-    "start": 2000,
-    "stage": 3
+    "date": "Ved det ikke endnu",
+    "start": 900,
+    "stage": 4
   },
   {
     "name": "KOKOKO!",
     "day": 7,
+    "date": "Lørdag, 7. juli",
     "start": 2130,
-    "stage": 2
+    "stage": 1
   },
   {
     "name": "LARGE UNIT BRAZIL EDITION",
     "day": 7,
-    "start": 2130,
-    "stage": 0
+    "date": "Lørdag, 7. juli",
+    "start": 900,
+    "stage": 1
   },
   {
     "name": "LAUREL HALO",
     "day": 6,
-    "start": 2200,
-    "stage": 5
+    "date": "Fredag, 6. juli",
+    "start": 900,
+    "stage": 1
   },
   {
     "name": "LEKHFA",
     "day": 6,
-    "start": 2000,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 1345,
+    "stage": 3
   },
   {
     "name": "LLNN",
     "day": 6,
+    "date": "Fredag, 6. juli",
     "start": 2000,
-    "stage": 1
+    "stage": 5
   },
   {
     "name": "MADALITSO BAND",
     "day": 4,
-    "start": 900,
-    "stage": 3
+    "date": "Onsdag, 4. juli",
+    "start": 1345,
+    "stage": 0
   },
   {
     "name": "±MAISMENOS±",
     "day": -1,
-    "start": 2130,
-    "stage": 0
+    "date": "Ved det ikke endnu",
+    "start": 1345,
+    "stage": 2
   },
   {
     "name": "MARIBOU STATE",
     "day": 5,
+    "date": "Torsdag, 5. juli",
     "start": 2200,
-    "stage": 4
+    "stage": 0
   },
   {
     "name": "MHD",
     "day": 7,
+    "date": "Lørdag, 7. juli",
     "start": 100,
-    "stage": 3
+    "stage": 1
   },
   {
     "name": "MINYANTA",
     "day": 6,
-    "start": 2000,
-    "stage": 0
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 3
   },
   {
     "name": "MOTORSAV",
     "day": 5,
-    "start": 2200,
-    "stage": 1
-  },
-  {
-    "name": "MYRKUR (fredag)",
-    "day": 6,
-    "start": 1540,
-    "stage": 1
-  },
-  {
-    "name": "MYRKUR (lørdag)",
-    "day": 7,
+    "date": "Torsdag, 5. juli",
     "start": 100,
+    "stage": 4
+  },
+  {
+    "name": "MYRKUR",
+    "day": 6,
+    "date": "Fredag, 6. juli",
+    "start": 2130,
+    "stage": 1
+  },
+  {
+    "name": "MYRKUR",
+    "day": 7,
+    "date": "Lørdag, 7. juli",
+    "start": 130,
     "stage": 1
   },
   {
     "name": "NAT BLOCH GREGERSEN",
     "day": -1,
-    "start": 2000,
+    "date": "Ved det ikke endnu",
+    "start": 2130,
     "stage": 5
   },
   {
     "name": "NATHAN FAKE",
     "day": 4,
-    "start": 1345,
-    "stage": 4
+    "date": "Onsdag, 4. juli",
+    "start": 2000,
+    "stage": 1
   },
   {
     "name": "NELSON CAN",
     "day": 5,
-    "start": 2000,
-    "stage": 5
+    "date": "Torsdag, 5. juli",
+    "start": 900,
+    "stage": 4
   },
   {
     "name": "NEW GEN",
     "day": 6,
+    "date": "Fredag, 6. juli",
     "start": 900,
-    "stage": 1
+    "stage": 5
   },
   {
     "name": "NIHILOXICA",
     "day": 4,
-    "start": 100,
-    "stage": 0
+    "date": "Onsdag, 4. juli",
+    "start": 2000,
+    "stage": 2
   },
   {
     "name": "NINES",
     "day": 6,
-    "start": 900,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 2000,
+    "stage": 5
   },
   {
     "name": "NYT LIV",
     "day": 5,
-    "start": 1345,
-    "stage": 0
+    "date": "Torsdag, 5. juli",
+    "start": 100,
+    "stage": 2
   },
   {
     "name": "OH SEES",
     "day": 5,
+    "date": "Torsdag, 5. juli",
     "start": 1345,
-    "stage": 3
+    "stage": 4
   },
   {
     "name": "OMNI",
     "day": 7,
-    "start": 2130,
-    "stage": 0
+    "date": "Lørdag, 7. juli",
+    "start": 900,
+    "stage": 3
   },
   {
     "name": "OND TRO",
     "day": 5,
+    "date": "Torsdag, 5. juli",
     "start": 1345,
     "stage": 2
   },
   {
     "name": "OPERAP",
     "day": 7,
-    "start": 2000,
-    "stage": 4
+    "date": "Lørdag, 7. juli",
+    "start": 900,
+    "stage": 2
   },
   {
     "name": "OSKAR KOLIANDER",
     "day": -1,
-    "start": 2000,
-    "stage": 1
+    "date": "Ved det ikke endnu",
+    "start": 100,
+    "stage": 3
   },
   {
     "name": "OTIM ALPHA",
     "day": 6,
-    "start": 900,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 100,
+    "stage": 0
   },
   {
     "name": "PAAL NILSSEN-LOVE'S BRAZIL FUNK IMPRO",
     "day": 5,
-    "start": 2130,
-    "stage": 1
+    "date": "Torsdag, 5. juli",
+    "start": 1345,
+    "stage": 2
   },
   {
     "name": "PAAL NILSSEN-LOVE'S JAPAN FREE JAZZ AND NOISE",
     "day": 4,
-    "start": 2200,
-    "stage": 1
+    "date": "Onsdag, 4. juli",
+    "start": 900,
+    "stage": 4
   },
   {
     "name": "PALM",
     "day": 7,
-    "start": 2200,
-    "stage": 3
+    "date": "Lørdag, 7. juli",
+    "start": 2000,
+    "stage": 0
   },
   {
     "name": "PAUL BARSCH & TILMAN HORNIG",
     "day": -1,
-    "start": 100,
-    "stage": 5
+    "date": "Ved det ikke endnu",
+    "start": 2130,
+    "stage": 3
   },
   {
     "name": "PETER SOMMER",
     "day": 7,
-    "start": 1345,
-    "stage": 3
+    "date": "Lørdag, 7. juli",
+    "start": 900,
+    "stage": 2
   },
   {
     "name": "PIGS PIGS PIGS PIGS PIGS PIGS PIGS",
     "day": 4,
-    "start": 2200,
-    "stage": 2
+    "date": "Onsdag, 4. juli",
+    "start": 100,
+    "stage": 5
   },
   {
     "name": "PREOCCUPATIONS",
     "day": 5,
+    "date": "Torsdag, 5. juli",
     "start": 2200,
-    "stage": 2
+    "stage": 3
   },
   {
     "name": "PUBLIC WORKS",
     "day": -1,
-    "start": 100,
+    "date": "Ved det ikke endnu",
+    "start": 2130,
     "stage": 1
   },
   {
     "name": "RASCASUELOS",
     "day": 7,
-    "start": 100,
-    "stage": 0
+    "date": "Lørdag, 7. juli",
+    "start": 2130,
+    "stage": 3
   },
   {
     "name": "REGELBAU PRESENTS CENTRAL + DJ SPORTS + C.K + MANMADE DEEJAY",
     "day": 5,
-    "start": 100,
-    "stage": 5
+    "date": "Torsdag, 5. juli",
+    "start": 900,
+    "stage": 1
   },
   {
     "name": "RICHARD DAWSON BAND",
     "day": 6,
-    "start": 100,
-    "stage": 3
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 2
   },
   {
     "name": "SACRED PAWS",
     "day": 5,
-    "start": 100,
-    "stage": 4
+    "date": "Torsdag, 5. juli",
+    "start": 2200,
+    "stage": 3
   },
   {
     "name": "SAMPHA",
     "day": 6,
-    "start": 2130,
-    "stage": 1
+    "date": "Fredag, 6. juli",
+    "start": 100,
+    "stage": 0
   },
   {
     "name": "SANDUNES",
     "day": 6,
-    "start": 900,
+    "date": "Fredag, 6. juli",
+    "start": 2200,
     "stage": 0
   },
   {
     "name": "(SANDY) ALEX G",
     "day": 6,
-    "start": 2200,
-    "stage": 4
+    "date": "Fredag, 6. juli",
+    "start": 2130,
+    "stage": 2
   },
   {
     "name": "SAVEUS",
     "day": 4,
-    "start": 1345,
-    "stage": 1
+    "date": "Onsdag, 4. juli",
+    "start": 2200,
+    "stage": 2
   },
   {
     "name": "SCOUR",
     "day": 7,
-    "start": 2130,
-    "stage": 2
+    "date": "Lørdag, 7. juli",
+    "start": 1345,
+    "stage": 5
   },
   {
     "name": "SIGRID",
     "day": 7,
-    "start": 900,
-    "stage": 5
+    "date": "Lørdag, 7. juli",
+    "start": 2130,
+    "stage": 1
   },
   {
     "name": "ŠIROM",
     "day": 7,
-    "start": 100,
-    "stage": 2
+    "date": "Lørdag, 7. juli",
+    "start": 2200,
+    "stage": 0
   },
   {
     "name": "SKELETONWITCH",
     "day": 6,
-    "start": 2000,
-    "stage": 4
+    "date": "Fredag, 6. juli",
+    "start": 1345,
+    "stage": 0
   },
   {
     "name": "SLAVES",
     "day": 7,
-    "start": 100,
-    "stage": 1
+    "date": "Lørdag, 7. juli",
+    "start": 2130,
+    "stage": 3
   },
   {
     "name": "SLYDIGS",
     "day": 7,
-    "start": 2130,
-    "stage": 0
+    "date": "Lørdag, 7. juli",
+    "start": 2200,
+    "stage": 1
   },
   {
     "name": "SMERZ",
     "day": 5,
-    "start": 2000,
+    "date": "Torsdag, 5. juli",
+    "start": 2200,
     "stage": 2
   },
   {
     "name": "STEFFLON DON",
     "day": 6,
-    "start": 1345,
-    "stage": 0
+    "date": "Fredag, 6. juli",
+    "start": 2130,
+    "stage": 5
   },
   {
     "name": "SUPER PARQUET",
     "day": 7,
-    "start": 2200,
-    "stage": 2
+    "date": "Lørdag, 7. juli",
+    "start": 100,
+    "stage": 0
   },
   {
     "name": "SUPERORGANISM",
     "day": 5,
-    "start": 100,
-    "stage": 2
+    "date": "Torsdag, 5. juli",
+    "start": 2000,
+    "stage": 4
   },
   {
     "name": "TOUCHÉ AMORÉ",
     "day": 6,
-    "start": 2130,
-    "stage": 5
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 3
   },
   {
     "name": "TUINA NIKIENTA OLIVIER",
     "day": -1,
-    "start": 2200,
-    "stage": 3
+    "date": "Ved det ikke endnu",
+    "start": 900,
+    "stage": 2
   },
   {
     "name": "TUNE-YARDS",
     "day": 5,
-    "start": 1345,
-    "stage": 0
+    "date": "Torsdag, 5. juli",
+    "start": 2200,
+    "stage": 1
   },
   {
     "name": "TURBOLENS",
     "day": 5,
-    "start": 2200,
-    "stage": 4
+    "date": "Torsdag, 5. juli",
+    "start": 900,
+    "stage": 3
   },
   {
     "name": "VERONIKA GEIGER",
     "day": -1,
-    "start": 900,
-    "stage": 0
+    "date": "Ved det ikke endnu",
+    "start": 2200,
+    "stage": 2
   },
   {
     "name": "VETO",
     "day": 7,
+    "date": "Lørdag, 7. juli",
     "start": 100,
-    "stage": 4
+    "stage": 2
   },
   {
     "name": "VIKTORIA WENDEL SKOUSEN",
     "day": -1,
-    "start": 100,
-    "stage": 3
+    "date": "Ved det ikke endnu",
+    "start": 2130,
+    "stage": 0
   },
   {
     "name": "WATAIN",
     "day": 6,
-    "start": 2200,
-    "stage": 3
+    "date": "Fredag, 6. juli",
+    "start": 900,
+    "stage": 5
   },
   {
     "name": "THE WEATHER STATION",
     "day": 5,
+    "date": "Torsdag, 5. juli",
     "start": 900,
-    "stage": 1
+    "stage": 5
   },
   {
     "name": "WILKINSON",
     "day": 5,
+    "date": "Torsdag, 5. juli",
     "start": 2000,
-    "stage": 5
+    "stage": 1
   },
   {
     "name": "YASMINE HAMDAN",
     "day": 5,
-    "start": 2130,
-    "stage": 0
+    "date": "Torsdag, 5. juli",
+    "start": 900,
+    "stage": 4
   },
   {
     "name": "YASUAKI SHIMIZU",
     "day": 6,
-    "start": 1345,
-    "stage": 3
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 5
   },
   {
     "name": "YONAKA",
     "day": 7,
-    "start": 2130,
-    "stage": 4
+    "date": "Lørdag, 7. juli",
+    "start": 2000,
+    "stage": 1
   },
   {
     "name": "YOUNG FATHERS",
     "day": 6,
-    "start": 100,
-    "stage": 5
+    "date": "Fredag, 6. juli",
+    "start": 2200,
+    "stage": 4
   },
   {
     "name": "ZOE WALKER & NEIL BROMWICH",
     "day": -1,
-    "start": 1345,
-    "stage": 4
+    "date": "Ved det ikke endnu",
+    "start": 2000,
+    "stage": 1
   },
   {
     "name": "Ø [PHASE]",
     "day": 5,
-    "start": 900,
-    "stage": 4
+    "date": "Torsdag, 5. juli",
+    "start": 2000,
+    "stage": 2
   },
   {
     "name": "ADDISABABABAND",
     "day": 1,
+    "date": "Søndag, 1. juli",
     "start": 1345,
-    "stage": 2
+    "stage": 1
   },
   {
     "name": "ALBIN LEE MELDAU",
     "day": 2,
-    "start": 2200,
-    "stage": 5
+    "date": "Mandag, 2. juli",
+    "start": 2000,
+    "stage": 4
   },
   {
     "name": "ALCABEAN",
     "day": 1,
+    "date": "Søndag, 1. juli",
     "start": 900,
-    "stage": 0
+    "stage": 4
   },
   {
     "name": "ARTIGEARDIT",
     "day": 3,
-    "start": 2200,
-    "stage": 1
+    "date": "Tirsdag, 3. juli",
+    "start": 100,
+    "stage": 2
   },
   {
     "name": "B FROM E",
     "day": 1,
-    "start": 900,
-    "stage": 4
+    "date": "Søndag, 1. juli",
+    "start": 100,
+    "stage": 3
   },
   {
     "name": "BAIME",
     "day": 1,
-    "start": 100,
-    "stage": 5
+    "date": "Søndag, 1. juli",
+    "start": 2200,
+    "stage": 0
   },
   {
     "name": "CABAL",
     "day": 2,
-    "start": 2200,
-    "stage": 2
+    "date": "Mandag, 2. juli",
+    "start": 2130,
+    "stage": 5
   },
   {
     "name": "CLARISSA CONNELLY",
     "day": 1,
-    "start": 2000,
-    "stage": 1
+    "date": "Søndag, 1. juli",
+    "start": 1345,
+    "stage": 4
   },
   {
     "name": "CTRLS",
     "day": 2,
-    "start": 100,
-    "stage": 4
+    "date": "Mandag, 2. juli",
+    "start": 2000,
+    "stage": 5
   },
   {
     "name": "DANIEL SAVI (Resident DJ)",
     "day": 1,
-    "start": 1345,
-    "stage": 4
+    "date": "Søndag, 1. juli",
+    "start": 2200,
+    "stage": 5
   },
   {
     "name": "DIRT FORGE",
     "day": 1,
-    "start": 1345,
-    "stage": 5
+    "date": "Søndag, 1. juli",
+    "start": 2200,
+    "stage": 1
   },
   {
     "name": "DISCOTHÈQUE MOBUMFE (Resident DJ)",
     "day": 3,
-    "start": 100,
-    "stage": 1
+    "date": "Tirsdag, 3. juli",
+    "start": 2130,
+    "stage": 3
   },
   {
     "name": "ECSTASY IN ORDER",
     "day": 2,
-    "start": 100,
-    "stage": 4
+    "date": "Mandag, 2. juli",
+    "start": 900,
+    "stage": 5
   },
   {
     "name": "EERA",
     "day": 1,
-    "start": 900,
-    "stage": 5
+    "date": "Søndag, 1. juli",
+    "start": 2200,
+    "stage": 1
   },
   {
     "name": "ELLIS MAY",
     "day": 3,
-    "start": 900,
-    "stage": 3
+    "date": "Tirsdag, 3. juli",
+    "start": 2200,
+    "stage": 1
   },
   {
     "name": "EMIL KRUSE",
     "day": 1,
-    "start": 2130,
-    "stage": 5
+    "date": "Søndag, 1. juli",
+    "start": 2000,
+    "stage": 3
   },
   {
     "name": "FOOL",
     "day": 3,
-    "start": 2000,
-    "stage": 0
+    "date": "Tirsdag, 3. juli",
+    "start": 2200,
+    "stage": 3
   },
   {
     "name": "FRAADS",
     "day": 2,
-    "start": 900,
-    "stage": 1
+    "date": "Mandag, 2. juli",
+    "start": 100,
+    "stage": 3
   },
   {
     "name": "GOSS",
     "day": 2,
-    "start": 2130,
-    "stage": 0
+    "date": "Mandag, 2. juli",
+    "start": 100,
+    "stage": 3
   },
   {
     "name": "GURLI OCTAVIA",
     "day": 2,
-    "start": 2130,
-    "stage": 5
+    "date": "Mandag, 2. juli",
+    "start": 100,
+    "stage": 3
   },
   {
     "name": "HOLM",
     "day": 3,
-    "start": 2000,
-    "stage": 1
+    "date": "Tirsdag, 3. juli",
+    "start": 2130,
+    "stage": 4
   },
   {
     "name": "IRIS GOLD",
     "day": 3,
+    "date": "Tirsdag, 3. juli",
     "start": 100,
-    "stage": 1
+    "stage": 0
   },
   {
     "name": "JADA",
     "day": 1,
-    "start": 2200,
-    "stage": 2
+    "date": "Søndag, 1. juli",
+    "start": 1345,
+    "stage": 0
   },
   {
     "name": "JAKOB OGAWA",
     "day": 3,
-    "start": 1345,
-    "stage": 1
-  },
-  {
-    "name": "KIPPENBERGER",
-    "day": 2,
-    "start": 900,
-    "stage": 2
-  },
-  {
-    "name": "KONNI KASS",
-    "day": 3,
-    "start": 1345,
-    "stage": 4
-  },
-  {
-    "name": "LOKE DEPH",
-    "day": 2,
-    "start": 900,
-    "stage": 4
-  },
-  {
-    "name": "LUSTER",
-    "day": 2,
+    "date": "Tirsdag, 3. juli",
     "start": 2000,
     "stage": 0
   },
   {
+    "name": "KIPPENBERGER",
+    "day": 2,
+    "date": "Mandag, 2. juli",
+    "start": 1345,
+    "stage": 3
+  },
+  {
+    "name": "KONNI KASS",
+    "day": 3,
+    "date": "Tirsdag, 3. juli",
+    "start": 2130,
+    "stage": 1
+  },
+  {
+    "name": "LOKE DEPH",
+    "day": 2,
+    "date": "Mandag, 2. juli",
+    "start": 900,
+    "stage": 5
+  },
+  {
+    "name": "LUSTER",
+    "day": 2,
+    "date": "Mandag, 2. juli",
+    "start": 900,
+    "stage": 3
+  },
+  {
     "name": "LYRA VALENZA",
     "day": 1,
+    "date": "Søndag, 1. juli",
     "start": 900,
     "stage": 1
   },
   {
     "name": "LØD",
     "day": 3,
-    "start": 2200,
-    "stage": 0
+    "date": "Tirsdag, 3. juli",
+    "start": 2130,
+    "stage": 1
   },
   {
     "name": "MARATON",
     "day": 3,
-    "start": 100,
-    "stage": 2
+    "date": "Tirsdag, 3. juli",
+    "start": 2130,
+    "stage": 5
   },
   {
     "name": "MARSHALL CECIL",
     "day": 3,
-    "start": 900,
-    "stage": 2
+    "date": "Tirsdag, 3. juli",
+    "start": 2200,
+    "stage": 4
   },
   {
     "name": "MIRIAM BRYANT",
     "day": 1,
-    "start": 2130,
-    "stage": 1
+    "date": "Søndag, 1. juli",
+    "start": 2000,
+    "stage": 2
   },
   {
     "name": "MOUNT LIBERATION UNLIMITED",
     "day": 2,
-    "start": 2130,
-    "stage": 1
+    "date": "Mandag, 2. juli",
+    "start": 100,
+    "stage": 4
   },
   {
     "name": "PALE HONEY",
     "day": 2,
-    "start": 2200,
-    "stage": 5
+    "date": "Mandag, 2. juli",
+    "start": 100,
+    "stage": 4
   },
   {
     "name": "ROME IS NOT A TOWN",
     "day": 2,
-    "start": 1345,
-    "stage": 5
+    "date": "Mandag, 2. juli",
+    "start": 100,
+    "stage": 4
   },
   {
     "name": "SASSY 009",
     "day": 1,
+    "date": "Søndag, 1. juli",
     "start": 2200,
-    "stage": 2
+    "stage": 4
   },
   {
     "name": "SIGMA",
     "day": 3,
+    "date": "Tirsdag, 3. juli",
     "start": 2000,
-    "stage": 3
+    "stage": 1
   },
   {
     "name": "SIMON LITTAUER",
     "day": 3,
-    "start": 1345,
+    "date": "Tirsdag, 3. juli",
+    "start": 2000,
     "stage": 1
   },
   {
     "name": "SISTA BOSSEN",
     "day": 1,
-    "start": 100,
-    "stage": 0
+    "date": "Søndag, 1. juli",
+    "start": 900,
+    "stage": 4
   },
   {
     "name": "SLÆGT",
     "day": 1,
+    "date": "Søndag, 1. juli",
     "start": 100,
-    "stage": 5
+    "stage": 1
   },
   {
     "name": "TAN",
     "day": 3,
-    "start": 1345,
-    "stage": 0
+    "date": "Tirsdag, 3. juli",
+    "start": 2200,
+    "stage": 4
   },
   {
     "name": "TIGHT CHERRY (Resident DJ)",
     "day": 2,
+    "date": "Mandag, 2. juli",
     "start": 2000,
-    "stage": 2
+    "stage": 3
   }
 ];
