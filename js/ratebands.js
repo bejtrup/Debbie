@@ -10,7 +10,7 @@ $(function(){
   if( startBand < 190 ){
     $("div.bandName").html(getBandNameHtml(startBand)).removeClass("out");
     var isAnimationOn = false;
-    $("div.food").click(function(){
+    $("img.food").click(function(){
       if(!isAnimationOn){
         $this = $(this);
         $this.addClass("fall");
@@ -54,7 +54,7 @@ function loadNextBand(id){
 function getBandNameHtml(id){
   var name = programArray[id].name;
   var day = programArray[id].date;
-  return "<h1>"+name+"</h1><h4>"+day+"</h4><input type='hidden' name=''' value='"+id+"'>";
+  return "<h1>"+name+" ?</h1><h4>"+day+"</h4><h5><a href='https://open.spotify.com/search/artists/"+encodeURI(name)+"' target='_blank'>søg spotify</a><h5><input type='hidden' name=''' value='"+id+"'>";
 }
 
 function slutScene(){
