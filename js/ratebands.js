@@ -1,3 +1,12 @@
+
+if( localStorage.getItem("BandRating") ){
+  var BandRating = JSON.parse(localStorage.getItem("BandRating"));
+} else {
+  var BandRating = [];
+}
+
+
+
 $(function(){
   $("div.bandName").html(getBandNameHtml(0)).removeClass("out");
   var isAnimationOn = false;
@@ -7,7 +16,11 @@ $(function(){
       $this.addClass("fall");
       isAnimationOn = true;
       setTimeout(function(){
-        loadNextBand();
+        var id = $("div.bandName input").val();
+        id = parseInt(id)+1
+        var rate = $this.data("rate");
+        rateBand(id, rate);
+        loadNextBand(id);
       }, 600);
       setTimeout(function(){
         $this.removeClass("fall");
@@ -17,14 +30,14 @@ $(function(){
   });
 });
 
-function rateBand(){
+function rateBand(id, rate){
 
+  BandRating.push(rate)
+  localStorage.setItem('BandRating', JSON.stringify(BandRating));
 }
-function loadNextBand(){
+function loadNextBand(id){
   $("div.bandName").addClass("out");
   setTimeout(function(){
-    var id = $("div.bandName input").val();
-    id = parseInt(id)+1
     $("div.bandName").html(getBandNameHtml( id ));
     $("div.bandName").removeClass("out");
   }, 700);
