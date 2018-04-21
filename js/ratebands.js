@@ -7,7 +7,7 @@ if( localStorage.getItem("BandRating") ){
 
 $(function(){
   var startBand = BandRating.length;
-  if( startBand <= 190 ){
+  if( startBand < 190 ){
     $("div.bandName").html(getBandNameHtml(startBand)).removeClass("out");
     var isAnimationOn = false;
     $("div.food").click(function(){
@@ -29,7 +29,7 @@ $(function(){
       }
     });
   } else {
-      // SLUTSCENE!!!!!
+      slutScene();
   }
   if(startBand <= 0){
     $("#menu").addClass("out");
@@ -37,16 +37,19 @@ $(function(){
 });
 
 function rateBand(id, rate){
-
   BandRating.push(rate)
   localStorage.setItem('BandRating', JSON.stringify(BandRating));
 }
 function loadNextBand(id){
-  $("div.bandName").addClass("out");
-  setTimeout(function(){
-    $("div.bandName").html(getBandNameHtml( id ));
-    $("div.bandName").removeClass("out");
-  }, 700);
+  if(id < 190){
+    $("div.bandName").addClass("out");
+    setTimeout(function(){
+      $("div.bandName").html(getBandNameHtml( id ));
+      $("div.bandName").removeClass("out");
+    }, 700);
+  } else {
+    slutScene();
+  }
 }
 function getBandNameHtml(id){
   var name = programArray[id].name;
@@ -54,6 +57,9 @@ function getBandNameHtml(id){
   return "<h1>"+name+"</h1><h4>"+day+"</h4><input type='hidden' name=''' value='"+id+"'>";
 }
 
+function slutScene(){
+  console.log("slut");
+}
 
 //  menu
 $(function(){
