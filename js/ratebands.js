@@ -65,8 +65,22 @@ $(function(){
   });
   $("div#listbtn").on('click', function(){
     $("#list").addClass("out");
+    makeList();
   });
   $("#closeList").on('click', function(){
     $("#list").removeClass("out");
   });
 });
+
+function makeList(){
+  var html = '';
+
+  $.each(BandRating, function(k,v){
+    html += "<div class='listitem'>";
+    html += programArray[k].name;
+    html += " :: " + v;
+    html += "</div>";
+  });
+
+  $("div#listWrapper").html(html);
+}
