@@ -5,29 +5,35 @@ if( localStorage.getItem("BandRating") ){
   var BandRating = [];
 }
 
-
-
 $(function(){
-  $("div.bandName").html(getBandNameHtml(0)).removeClass("out");
-  var isAnimationOn = false;
-  $("div.food").click(function(){
-    if(!isAnimationOn){
-      $this = $(this);
-      $this.addClass("fall");
-      isAnimationOn = true;
-      setTimeout(function(){
-        var id = $("div.bandName input").val();
-        id = parseInt(id)+1
-        var rate = $this.data("rate");
-        rateBand(id, rate);
-        loadNextBand(id);
-      }, 600);
-      setTimeout(function(){
-        $this.removeClass("fall");
-        isAnimationOn = false;
-      }, 1600);
-    }
-  });
+  var startBand = BandRating.length;
+  if( startBand <= 190 ){
+    $("div.bandName").html(getBandNameHtml(startBand)).removeClass("out");
+    var isAnimationOn = false;
+    $("div.food").click(function(){
+      if(!isAnimationOn){
+        $this = $(this);
+        $this.addClass("fall");
+        isAnimationOn = true;
+        setTimeout(function(){
+          var id = $("div.bandName input").val();
+          id = parseInt(id)+1
+          var rate = $this.data("rate");
+          rateBand(id, rate);
+          loadNextBand(id);
+        }, 600);
+        setTimeout(function(){
+          $this.removeClass("fall");
+          isAnimationOn = false;
+        }, 1600);
+      }
+    });
+  } else {
+      // SLUTSCENE!!!!!
+  }
+  if(startBand <= 0){
+    $("#menu").addClass("out");
+  }
 });
 
 function rateBand(id, rate){
@@ -49,7 +55,6 @@ function getBandNameHtml(id){
 }
 
 
-
 //  menu
 $(function(){
   $("div#menubtn").on('click', function(){
@@ -57,5 +62,11 @@ $(function(){
   });
   $("#close").on('click', function(){
     $("#menu").removeClass("out");
+  });
+  $("div#listbtn").on('click', function(){
+    $("#list").addClass("out");
+  });
+  $("#closeList").on('click', function(){
+    $("#list").removeClass("out");
   });
 });
