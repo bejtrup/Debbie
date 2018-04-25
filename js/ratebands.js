@@ -122,8 +122,7 @@ function clearLocalStoarge(){
 
 function toggleRating(id, rate) {
   var newrate = rate == 1 ? -1 : rate + 1;
-  console.log(id,rate, newrate);
   saveRateBand(id,newrate)
-var html = getListhtml(id,programArray[id].name,newrate);
+  var html = getListhtml(id,programArray[id].name,newrate);
   $("div#listitem_"+id).replaceWith(html);
 }
