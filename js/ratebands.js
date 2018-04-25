@@ -37,7 +37,7 @@ $(function(){
 });
 
 function saveRateBand(id, rate){
-  if(!BandRating[id]){
+  if(BandRating[id] == undefined){
     BandRating.push(rate)
   } else {
     BandRating[id] = rate;
@@ -94,15 +94,16 @@ $.each(programArray,function(k,v){
 
 function getListhtml(id,name,rate){
   var html = "";
-  html += "<div id='listitem_"+id+"'' class='listitem' onclick='toggleRating("+id+","+rate+")'>";
+  var onclick = "onclick='toggleRating("+id+","+rate+")'";
+  html += "<div id='listitem_"+id+"'' class='listitem'>";
   if( rate == -1 ){
-    html += "<h4 class='nope'><strike>"+name+"</strike><span>nope</span></h4>";
+    html += "<h4 "+onclick+" class='nope'><strike>"+name+"</strike><span>nope</span></h4>";
   }
   else if ( rate == 0) {
-    html += "<h4 class='meh'>"+name+"<span>meh</span></h4>";
+    html += "<h4 "+onclick+" class='meh'>"+name+"<span>meh</span></h4>";
   }
   else if (rate == 1){
-    html += "<h4 class='yeah'>"+name+"</b><span>Yeah</span></h4>";
+    html += "<h4 "+onclick+" class='yeah'>"+name+"</b><span>Yeah</span></h4>";
   }
   else {
     html += "<h4 class='nope'>"+name + "<span>?</span></h4>";
