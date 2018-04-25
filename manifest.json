@@ -4,7 +4,7 @@
     "name" : "Debbie - styr på musikprogrammet",
     "scope" : "/",
     "display" : "fullscreen",
-    "start_url" : "https://runeapp.dk/",
+    "start_url" : "https://bejtrup.github.io/Debbie/",
     "short_name" : "Debbie",
     "theme_color" : "#6cc8c2",
     "description" : "Musikprogram",
