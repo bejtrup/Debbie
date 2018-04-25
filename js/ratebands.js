@@ -19,7 +19,7 @@ $(function(){
           var id = $("div.bandName input").val();
           id = parseInt(id)+1
           var rate = $this.data("rate");
-          rateBand(id, rate);
+          saveRateBand(id, rate);
           loadNextBand(id);
         }, 600);
         setTimeout(function(){
@@ -36,8 +36,12 @@ $(function(){
   }
 });
 
-function rateBand(id, rate){
-  BandRating.push(rate)
+function saveRateBand(id, rate){
+  if(!BandRating[id]){
+    BandRating.push(rate)
+  } else {
+    BandRating[id] = rate;
+  }
   localStorage.setItem('BandRating', JSON.stringify(BandRating));
 }
 function loadNextBand(id){
@@ -54,7 +58,7 @@ function loadNextBand(id){
 function getBandNameHtml(id){
   var name = programArray[id].name;
   var day = programArray[id].date;
-  return "<h1>"+name+" ?</h1><h4>"+day+"</h4><h5><a href='https://open.spotify.com/search/artists/"+encodeURI(name)+"' target='_blank'>søg spotify</a><h5><input type='hidden' name=''' value='"+id+"'>";
+  return "<h1>"+name+" ?</h1><h4>"+day+" <a href='https://open.spotify.com/search/artists/"+encodeURI(name)+"' target='_blank'>søg spotify</a><h4><input type='hidden' name=''' value='"+id+"'>";
 }
 
 function slutScene(){
@@ -80,13 +84,45 @@ $(function(){
 
 function makeList(){
   var html = '';
-
-  $.each(BandRating, function(k,v){
-    html += "<div class='listitem'>";
-    html += programArray[k].name;
-    html += " :: " + v;
-    html += "</div>";
-  });
-
+$.each(programArray,function(k,v){
+   var rate = BandRating[k];
+   html += getListhtml(k,v.name,rate);
+});
+  html += "<div class='listitem'><h5 onclick='clearLocalStoarge();'>nulstil alle</h5></div>"
   $("div#listWrapper").html(html);
+}
+
+function getListhtml(id,name,rate){
+  var html = "";
+  html += "<div id='listitem_"+id+"'' class='listitem' onclick='toggleRating("+id+","+rate+")'>";
+  if( rate == -1 ){
+    html += "<h4 class='nope'><strike>"+name+"</strike><span>nope</span></h4>";
+  }
+  else if ( rate == 0) {
+    html += "<h4 class='meh'>"+name+"<span>meh</span></h4>";
+  }
+  else if (rate == 1){
+    html += "<h4 class='yeah'>"+name+"</b><span>Yeah</span></h4>";
+  }
+  else {
+    html += "<h4 class='nope'>"+name + "<span>?</span></h4>";
+  }
+  html += "</div>";
+  return html;
+}
+
+function clearLocalStoarge(){
+  var con = confirm("Er du helt helt helt sikker?");
+  if(con){
+    localStorage.removeItem("BandRating");
+    location.reload();
+  }
+}
+
+function toggleRating(id, rate) {
+  var newrate = rate == 1 ? -1 : rate + 1;
+  console.log(id,rate, newrate);
+  saveRateBand(id,newrate)
+var html = getListhtml(id,programArray[id].name,newrate);
+  $("div#listitem_"+id).replaceWith(html);
 }

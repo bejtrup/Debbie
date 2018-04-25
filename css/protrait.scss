@@ -73,7 +73,7 @@
       transform: translateX(-33vw) translateY(15vh) rotate(-90deg);
     }
     100% {
-        transform: translateX(-33vw) translateY(50vh) rotate(-90deg);
+        transform: translateX(-33vw) translateY(45vh) rotate(-90deg);
     }
 }
 
@@ -99,7 +99,7 @@
   display: table;
   text-align: center;
   width: 100%;
-  height: 20%;
+  height: 17%;
   @include animation(0, 0.3s, bandNameLoad, ease-in)
   &.out{
       @include animation(0, 0.3s, bandNameOut, ease-in)
@@ -108,7 +108,7 @@
 
 .giveRate {
   width: 100%;
-  height: 20%;
+  height: 23%;
   .foodContainer {
     position: relative;
     display: inline-block;
@@ -210,4 +210,21 @@
   height: 40px;
   width: 40px;
   z-index: 100000;
+}
+.listitem {
+  padding: 1rem 0;
+  border-top: 1px solid #d63e88;
+  .nope{
+    color: #b70d60;
+  }
+  .meh{
+    color: #710f3f;
+  }
+  .yeah{
+  
+  }
+  span {
+    margin-left: 1rem;
+    float: right;
+  }
 }
