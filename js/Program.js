@@ -1,7 +1,7 @@
 var date =  new Date
 var min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
 var time = parseInt(date.getHours()+""+min);
-var now = { day: 4, time: time };
+var now = { day: 0, time: time };
 
 $( function(){
   settime(now);
@@ -12,17 +12,17 @@ $( function(){
 function makeMusikProgram(){
     $.each(programArray, function(k,v){
       if(v.day >= now.day){
-  //    var day =  $("#day_"+k);
-         var start = v.start == 0000 ? 2400 : v.start;
+         //var start = v.start == 0000 ? 2400 : v.start;
+         //var start = v.start < 100 ? 2400+v.start  : v.start;
+         var start = v.start;
          var h = parseInt(start.toString().slice(0, -2));
          var m = parseInt(v.start.toString().slice(-2)) * 0.069444445;
          var left = h * 4.1666666667; // for hours
          left = left + m;
          var length = v.length * 4.16666667;
-         var top = (v.stage) * (100/6);
-var vxvx = v.stage == 1 ? "One" : "Four";
-         var band = "<div class='band stange"+vxvx+"' style='left: "+left+"%; top:"+top+"%; width: "+length+"%;'><div><h4>"+v.name+"</h4><h6>kl"+ v.start +" ("+v.length+"t.) (scene "+v.stage+")</h6></div></div>";
-         $("#day_"+v.day).append(band);
+         var startString = start.toString().slice(0, -2) + ":" + v.start.toString().slice(-2);
+         var band = "<div class='band' style='left: "+left+"%; top:0; width: "+length+"%;'><div><h4>"+v.name+"</h4><h6>kl"+ startString +" på "+v.stage+"</h6></div></div>";
+         $("#day_"+v.day).find(".stage"+v.stageId).append(band);
        }
     });
 
@@ -34,12 +34,12 @@ function settime(now) {
   date =  new Date
   min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
   time = parseInt(date.getHours()+""+min);
-  now = { day: 3, time: time };
+  now = { day: 4, time: time };
   console.log(now);
   var t = now.time == 0000 ? 2400 : now.time;
   var h = parseInt( t.toString().slice(0, -2) );
   var m = parseInt(t.toString().slice(-2)) * (100/8/60);
-  var left = (now.day * 300) + (h*(100/8)) - (100/4); // 10 = marginleft 300=bredden for en dag // 100/8 da der er 8 timer på en skærm
+  var left = (now.day * 500) + (h*(100/4.85)) - (100/4.5); // 10 = marginleft 500=bredden for en dag // 100/8 da der er 8 timer på en skærm
 
   left = left + m;
 
@@ -56,6 +56,7 @@ var isScrolling;
 var lastScroll = 0;
 var scrolledDistLeft = 0;
 var fiftyProcent = $(window).width() / 2;
+
 function chk_scroll()
 {
   //get dist and end

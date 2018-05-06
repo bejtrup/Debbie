@@ -39,7 +39,7 @@
 .program{
   position: relative;
   height: 85vh;
-  min-width: 2500vw; // 300*8 + 100
+  min-width: 4600vw; // 500*9 + 100
   background: #fffdf0;
   outline: inset 4px #000;
   padding-top: 10vh;
@@ -69,7 +69,7 @@
   position: relative;
   display: inline-block;
   float: left;
-  width: 300vw; /*2400 / 8 = 300*/
+  width: 500vw; /*4100-100 / 8 */
   height: 100%;
   &:after{
     content: "";
@@ -124,24 +124,39 @@
     padding-right: 10px;
   }
 }
-
+.stages{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  .stage {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 16.666667%;
+    max-height: 16.666667%;
+    &:empty{
+      display: none;
+    }
+  }
+}
 .band {
   position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  min-height: 16.666667%;
-  transition: .5s;
+  height: 100%;
+    align-items: center;
+    padding: 0;
   z-index: 10;
   h4 {
     margin: 0;
-    font-size: 2.4vw;
+    margin-left: 1rem;
+    font-size: 2vw;
+    white-space: nowrap;
   }
   h6 {
     margin: 0;
+    margin-left: 1rem;
   }
 }
 //perspective( 60vw ) rotateY( -45deg ) rotateZ(-20deg) translateY(212%)
