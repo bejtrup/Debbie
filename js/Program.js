@@ -11,7 +11,8 @@ $( function(){
 
 function makeMusikProgram(){
     $.each(programArray, function(k,v){
-      if(v.day >= now.day){
+      var rateClass = BandRating[k] == undefined ? "ikkeSat" : BandRating[k];
+      if(v.day >= now.day && rateClass != -1){
          //var start = v.start == 0000 ? 2400 : v.start;
          //var start = v.start < 100 ? 2400+v.start  : v.start;
          var start = v.start;
@@ -21,13 +22,16 @@ function makeMusikProgram(){
          left = left + m;
          var length = v.length * 4.16666667;
          var startString = start.toString().slice(0, -2) + ":" + v.start.toString().slice(-2);
-         var band = "<div class='band' style='left: "+left+"%; top:0; width: "+length+"%;'><div><h4>"+v.name+"</h4><h6>kl"+ startString +" på "+v.stage+"</h6></div></div>";
+
+         if(rateClass == 1) {
+           rateClass = "poo";
+         } else if( rateClass == 0 ) {
+          rateClass = "pee";
+         }
+         var band = "<div class='band "+rateClass+"' style='left: "+left+"%; top:0; width: "+length+"%;'><div><h4>"+v.name+"</h4><h6>kl"+ startString +" på "+v.stage+"</h6></div></div>";
          $("#day_"+v.day).find(".stage"+v.stageId).append(band);
        }
     });
-
-    $(".band:odd").addClass("poo");
-    $(".band:even").addClass("pee");
 }
 
 function settime(now) {
