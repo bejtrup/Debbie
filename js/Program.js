@@ -15,14 +15,14 @@ function makeMusikProgram(){
       if(v.day >= now.day && rateClass != -1){
          //var start = v.start == 0000 ? 2400 : v.start;
          //var start = v.start < 100 ? 2400+v.start  : v.start;
-         var start = v.start;
+         var start = v.start ;
          var h = parseInt(start.toString().slice(0, -2));
-         var m = parseInt(v.start.toString().slice(-2)) * 0.069444445;
+         h = !h ? "0" : h;
+         var m = parseInt(start.toString().slice(-2)) * 0.069444445;
          var left = h * 4.1666666667; // for hours
          left = left + m;
          var length = v.length * 4.16666667;
-         var startString = start.toString().slice(0, -2) + ":" + v.start.toString().slice(-2);
-
+         var startString = (start.toString().slice(0, -2) == 0 ? "0": start.toString().slice(0, -2)) + ":" + (v.start.toString().slice(-2) == 0 ? "00" : v.start.toString().slice(-2));
          if(rateClass == 1) {
            rateClass = "poo";
          } else if( rateClass == 0 ) {
@@ -38,7 +38,7 @@ function settime(now) {
   date =  new Date
   min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
   time = parseInt(date.getHours()+""+min);
-  now = { day: 5, time: time };
+  now = { day: 3, time: time };
   console.log(now);
   var t = now.time == 0000 ? 2400 : now.time;
   var h = parseInt( t.toString().slice(0, -2) );
