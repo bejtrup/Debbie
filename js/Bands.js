@@ -6,7 +6,7 @@ var programArray = [
     "start": 2230,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "BRUNO MARS",
@@ -15,7 +15,7 @@ var programArray = [
     "start": 2200,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "GORILLAZ",
@@ -24,7 +24,7 @@ var programArray = [
     "start": 2300,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "NICK CAVE & THE BAD SEEDS",
@@ -33,7 +33,7 @@ var programArray = [
     "start": 2200,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "NINE INCH NAILS",
@@ -42,7 +42,7 @@ var programArray = [
     "start": 0000,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "MASSIVE ATTACK",
@@ -51,7 +51,7 @@ var programArray = [
     "start": 100,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "DAVID BYRNE",
@@ -60,7 +60,7 @@ var programArray = [
     "start": 0000,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "DUA LIPA",
@@ -69,7 +69,7 @@ var programArray = [
     "start": 2000,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "NEPHEW",
@@ -78,7 +78,7 @@ var programArray = [
     "start": 100,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "ALEX VARGAS",
@@ -87,7 +87,7 @@ var programArray = [
     "start": 1400,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "ANDERSON .PAAK & THE FREE NATIONALS",
@@ -105,7 +105,7 @@ var programArray = [
     "start": 1700,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "BLACK STAR",
@@ -114,7 +114,7 @@ var programArray = [
     "start": 1400,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "CHARLOTTE GAINSBOURG",
@@ -123,7 +123,7 @@ var programArray = [
     "start": 0000,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "CV JØRGENSEN",
@@ -132,7 +132,7 @@ var programArray = [
     "start": 1630,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "DESCENDENTS",
@@ -141,7 +141,7 @@ var programArray = [
     "start": 1700,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "FEVER RAY",
@@ -150,7 +150,7 @@ var programArray = [
     "start": 200,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "FIRST AID KIT",
@@ -159,7 +159,7 @@ var programArray = [
     "start": 1600,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "FLEET FOXES",
@@ -168,7 +168,7 @@ var programArray = [
     "start": 1900,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "FOUR TET",
@@ -186,7 +186,7 @@ var programArray = [
     "start": 1900,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "JOEY BADA$$",
@@ -204,7 +204,7 @@ var programArray = [
     "start": 1900,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "MIKE SKINNER & MURKAGE PRESENT TONGA",
@@ -222,7 +222,7 @@ var programArray = [
     "start": 2100,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "MY BLOODY VALENTINE",
@@ -231,7 +231,7 @@ var programArray = [
     "start": 200,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "ODESZA",
@@ -240,7 +240,7 @@ var programArray = [
     "start": 2100,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "PABLO MOSES",
@@ -249,7 +249,7 @@ var programArray = [
     "start": 1600,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "PARTYNEXTDOOR",
@@ -276,7 +276,7 @@ var programArray = [
     "start": 2130,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "STORMZY",
@@ -285,7 +285,7 @@ var programArray = [
     "start": 2345,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "THE MINDS OF 99",
@@ -294,7 +294,7 @@ var programArray = [
     "start": 1900,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "VINCE STAPLES",
@@ -312,7 +312,7 @@ var programArray = [
     "start": 1600,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "ALBERT HAMMOND JR",
@@ -321,7 +321,7 @@ var programArray = [
     "start": 1430,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.2
   },
   // {
   //   "name": "AMMAR 808",
@@ -339,7 +339,7 @@ var programArray = [
     "start": 1900,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   // {
   //   "name": "ANNE HAANING",
@@ -393,7 +393,7 @@ var programArray = [
     "start": 1600,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "BISSE",
@@ -402,7 +402,7 @@ var programArray = [
     "start": 2100,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "BITORI",
@@ -438,7 +438,7 @@ var programArray = [
     "start": 2300,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "BORIS & MERZBOW",
@@ -510,7 +510,7 @@ var programArray = [
     "start": 1700,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "DARK TRANQUILLITY",
@@ -528,7 +528,7 @@ var programArray = [
     "start": 100,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "DEAD CROSS",
@@ -537,7 +537,7 @@ var programArray = [
     "start": 1500,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "DEBO BAND",
@@ -548,15 +548,15 @@ var programArray = [
     "stageId": 5,
     "length": 1
   },
-  {
-    "name": "DEBONAIR (resident DJ)",
-    "day": 6,
-    "date": "Fredag, 6. juli",
-    "start": 1800,
-    "stage": "Apollo",
-    "stageId": 0,
-    "length": 1
-  },
+  // {
+  //   "name": "DEBONAIR (resident DJ)",
+  //   "day": 6,
+  //   "date": "Fredag, 6. juli",
+  //   "start": 1800,
+  //   "stage": "Apollo",
+  //   "stageId": 0,
+  //   "length": 1
+  // },
   {
     "name": "DJ RASHIDA",
     "day": 5,
@@ -564,7 +564,7 @@ var programArray = [
     "start": 2130,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 0.5
   },
   {
     "name": "DONA ONETE",
@@ -573,7 +573,7 @@ var programArray = [
     "start": 2100,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "THE DWARFS OF EAST AGOUZA",
@@ -609,7 +609,7 @@ var programArray = [
     "start": 1200,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "HALEY HEYNDERICKX",
@@ -627,7 +627,7 @@ var programArray = [
     "start": 100,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "HOUSE GOSPEL CHOIR",
@@ -656,15 +656,15 @@ var programArray = [
     "stageId": 4,
     "length": 1
   },
-  {
-    "name": "INDIKA (resident DJ)",
-    "day": 7,
-    "date": "Lørdag, 7. juli",
-    "start": 1800,
-    "stage": "Apollo",
-    "stageId": 0,
-    "length": 1
-  },
+  // {
+  //   "name": "INDIKA (resident DJ)",
+  //   "day": 7,
+  //   "date": "Lørdag, 7. juli",
+  //   "start": 1800,
+  //   "stage": "Apollo",
+  //   "stageId": 0,
+  //   "length": 1
+  // },
   {
     "name": "I’M WITH HER",
     "day": 4,
@@ -780,7 +780,7 @@ var programArray = [
     "start": 1900,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "LARGE UNIT BRAZIL EDITION",
@@ -789,7 +789,7 @@ var programArray = [
     "start": 1500,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "LAUREL HALO",
@@ -861,7 +861,7 @@ var programArray = [
     "start": 1300,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "MAVI PHOENIX",
@@ -897,7 +897,7 @@ var programArray = [
     "start": 215,
     "stage": "Gloria",
     "stageId": 4,
-    "length": 1
+    "length": 0.75
   },
   {
     "name": "MYRKUR (1)",
@@ -942,7 +942,7 @@ var programArray = [
     "start": 1900,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "NEW GEN",
@@ -978,7 +978,7 @@ var programArray = [
     "start": 130,
     "stage": "Gloria",
     "stageId": 4,
-    "length": 1
+    "length": 0.75
   },
   {
     "name": "OH SEES",
@@ -1014,7 +1014,7 @@ var programArray = [
     "start": 1300,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   // {
   //   "name": "OSKAR KOLIANDER",
@@ -1070,24 +1070,24 @@ var programArray = [
   //   "stageId": 1000,
   //   "length": 1
   // },
-  {
-    "name": "PERNILLE (resident DJ) (1)",
-    "day": 4,
-    "date": "Onsdag, 4. juli",
-    "start": 1800,
-    "stage": "Apollo",
-    "stageId": 0,
-    "length": 1
-  },
-  {
-    "name": "PERNILLE (resident DJ) (2)",
-    "day": 4,
-    "date": "Torsdag, 5. juli",
-    "start": 1800,
-    "stage": "Apollo",
-    "stageId": 0,
-    "length": 1
-  },
+  // {
+  //   "name": "PERNILLE (resident DJ) (1)",
+  //   "day": 4,
+  //   "date": "Onsdag, 4. juli",
+  //   "start": 1800,
+  //   "stage": "Apollo",
+  //   "stageId": 0,
+  //   "length": 1
+  // },
+  // {
+  //   "name": "PERNILLE (resident DJ) (2)",
+  //   "day": 4,
+  //   "date": "Torsdag, 5. juli",
+  //   "start": 1800,
+  //   "stage": "Apollo",
+  //   "stageId": 0,
+  //   "length": 1
+  // },
   {
     "name": "PETER SOMMER",
     "day": 7,
@@ -1095,7 +1095,7 @@ var programArray = [
     "start": 1730,
     "stage": "Orange",
     "stageId": 3,
-    "length": 1
+    "length": 1.5
   },
   {
     "name": "PIGS PIGS PIGS PIGS PIGS PIGS PIGS",
@@ -1140,7 +1140,7 @@ var programArray = [
     "start": 2200,
     "stage": "Gloria",
     "stageId": 4,
-    "length": 1
+    "length": 3
   },
   {
     "name": "RICHARD DAWSON BAND",
@@ -1176,7 +1176,7 @@ var programArray = [
     "start": 2300,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "SANDUNES",
@@ -1221,7 +1221,7 @@ var programArray = [
     "start": 2130,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "ŠIROM",
@@ -1329,7 +1329,7 @@ var programArray = [
     "start": 1500,
     "stage": "Avalon",
     "stageId": 5,
-    "length": 1
+    "length": 1.2
   },
   {
     "name": "TURBOLENS",
@@ -1356,7 +1356,7 @@ var programArray = [
     "start": 1900,
     "stage": "Arena",
     "stageId": 2,
-    "length": 1
+    "length": 1.2
   },
   // {
   //   "name": "VIKTORIA WENDEL SKOUSEN",
@@ -1529,15 +1529,15 @@ var programArray = [
     "stageId": 6,
     "length": 1
   },
-  {
-    "name": "DANIEL SAVI (Resident DJ)",
-    "day": 1,
-    "date": "Søndag, 1. juli",
-    "start": 1800,
-    "stage": "Countdown",
-    "stageId": 6,
-    "length": 1
-  },
+  // {
+  //   "name": "DANIEL SAVI (Resident DJ)",
+  //   "day": 1,
+  //   "date": "Søndag, 1. juli",
+  //   "start": 1800,
+  //   "stage": "Countdown",
+  //   "stageId": 6,
+  //   "length": 1
+  // },
   {
     "name": "DIRT FORGE",
     "day": 1,
@@ -1547,15 +1547,15 @@ var programArray = [
     "stageId": 7,
     "length": 1
   },
-  {
-    "name": "DISCOTHÈQUE MOBUMFE (Resident DJ)",
-    "day": 3,
-    "date": "Tirsdag, 3. juli",
-    "start": 1800,
-    "stage": "Countdown",
-    "stageId": 6,
-    "length": 1
-  },
+  // {
+  //   "name": "DISCOTHÈQUE MOBUMFE (Resident DJ)",
+  //   "day": 3,
+  //   "date": "Tirsdag, 3. juli",
+  //   "start": 1800,
+  //   "stage": "Countdown",
+  //   "stageId": 6,
+  //   "length": 1
+  // },
   {
     "name": "ECSTASY IN ORDER",
     "day": 2,
@@ -1825,14 +1825,14 @@ var programArray = [
     "stage": "Rising",
     "stageId": 7,
     "length": 1
-  },
-  {
-    "name": "TIGHT CHERRY (Resident DJ)",
-    "day": 2,
-    "date": "Mandag, 2. juli",
-    "start": 1800,
-    "stage": "Countdown",
-    "stageId": 6,
-    "length": 1
   }
+  // {
+  //   "name": "TIGHT CHERRY (Resident DJ)",
+  //   "day": 2,
+  //   "date": "Mandag, 2. juli",
+  //   "start": 1800,
+  //   "stage": "Countdown",
+  //   "stageId": 6,
+  //   "length": 1
+  // }
 ];
