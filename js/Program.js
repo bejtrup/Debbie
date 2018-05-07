@@ -38,13 +38,12 @@ function settime(now) {
   date =  new Date
   min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
   time = parseInt(date.getHours()+""+min);
-  now = { day: 4, time: time };
+  now = { day: 5, time: time };
   console.log(now);
   var t = now.time == 0000 ? 2400 : now.time;
   var h = parseInt( t.toString().slice(0, -2) );
-  var m = parseInt(t.toString().slice(-2)) * (100/8/60);
-  var left = (now.day * 500) + (h*(100/4.85)) - (100/4.5); // 10 = marginleft 500=bredden for en dag // 100/8 da der er 8 timer på en skærm
-
+  var m = parseInt(t.toString().slice(-2)) * (100/4.835/60);
+  var left = (now.day * 500) + (h*(100/4.835)) - (30) ; // 10 = marginleft 500=bredden for en dag // 100/8 da der er 8 timer på en skærm
   left = left + m;
 
   $(".program").css({"transform": "translateX(-"+left+"vw)"});
