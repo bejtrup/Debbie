@@ -1,874 +1,3 @@
-//$(".media__header").each(function(k,v){ bands.push({  name: $(this).find(".media__title-text span").text(), fullDate: $.trim($(this).find(".media__artist-gig").text())  }) });
-//https://www.roskilde-festival.dk/music/2018?view=poster
-// copy(bands)
-// var bands = [
-//   {
-//     "name": "EMINEM",
-//     "fullDate": "Wednesday 4\tJuly, 22:30, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "BRUNO MARS",
-//     "fullDate": "Thursday 5\tJuly, 22:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "GORILLAZ",
-//     "fullDate": "Saturday 7\tJuly, 23:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "NICK CAVE & THE BAD SEEDS",
-//     "fullDate": "Friday 6\tJuly, 22:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "NINE INCH NAILS",
-//     "fullDate": "Thursday 5\tJuly, 00:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "MASSIVE ATTACK",
-//     "fullDate": "Saturday 7\tJuly, 01:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "DAVID BYRNE",
-//     "fullDate": "Saturday 7\tJuly, 00:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "DUA LIPA",
-//     "fullDate": "Saturday 7\tJuly, 20:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "NEPHEW",
-//     "fullDate": "Friday 6\tJuly, 01:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "ALEX VARGAS",
-//     "fullDate": "Friday 6\tJuly, 14:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "ANDERSON .PAAK & THE FREE NATIONALS",
-//     "fullDate": "Sunday 8\tJuly, 01:30, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "BEN FROST",
-//     "fullDate": "Thursday 5\tJuly, 17:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "BLACK STAR",
-//     "fullDate": "Thursday 5\tJuly, 14:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "CHARLOTTE GAINSBOURG",
-//     "fullDate": "Thursday 5\tJuly, 00:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "CV JØRGENSEN",
-//     "fullDate": "Saturday 7\tJuly, 16:30, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "DESCENDENTS",
-//     "fullDate": "Friday 6\tJuly, 17:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "FEVER RAY",
-//     "fullDate": "Saturday 7\tJuly, 02:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "FIRST AID KIT",
-//     "fullDate": "Thursday 5\tJuly, 16:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "FLEET FOXES",
-//     "fullDate": "Friday 6\tJuly, 19:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "FOUR TET",
-//     "fullDate": "Saturday 7\tJuly, 00:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "INTERPOL",
-//     "fullDate": "Thursday 5\tJuly, 19:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "JOEY BADA$$",
-//     "fullDate": "Friday 6\tJuly, 21:45, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "KHALID",
-//     "fullDate": "Thursday 5\tJuly, 19:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "MIKE SKINNER & MURKAGE PRESENT TONGA",
-//     "fullDate": "Sunday 8\tJuly, 02:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "MOGWAI",
-//     "fullDate": "Saturday 7\tJuly, 21:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "MY BLOODY VALENTINE",
-//     "fullDate": "Friday 6\tJuly, 02:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "ODESZA",
-//     "fullDate": "Friday 6\tJuly, 21:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "PABLO MOSES",
-//     "fullDate": "Friday 6\tJuly, 16:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "PARTYNEXTDOOR",
-//     "fullDate": "Wednesday 4\tJuly, 18:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "ST. VINCENT",
-//     "fullDate": "Wednesday 4\tJuly, 20:30, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "STONE SOUR",
-//     "fullDate": "Thursday 5\tJuly, 21:30, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "STORMZY",
-//     "fullDate": "Thursday 5\tJuly, 23:45, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "THE MINDS OF 99",
-//     "fullDate": "Friday 6\tJuly, 19:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "VINCE STAPLES",
-//     "fullDate": "Saturday 7\tJuly, 21:30, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "WHEN SAINTS GO MACHINE",
-//     "fullDate": "Thursday 5\tJuly, 16:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "ALBERT HAMMOND JR",
-//     "fullDate": "Saturday 7\tJuly, 14:30, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "AMMAR 808",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "ANDA UNION",
-//     "fullDate": "Friday 6\tJuly, 19:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "ANNE HAANING",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "BABY IN VAIN",
-//     "fullDate": "Saturday 7\tJuly, 02:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "BANKSLAVE",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "BCUC",
-//     "fullDate": "Thursday 5\tJuly, 00:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "BELLY",
-//     "fullDate": "Thursday 5\tJuly, 16:30, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "BENAL",
-//     "fullDate": "Friday 6\tJuly, 16:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "BISSE",
-//     "fullDate": "Friday 6\tJuly, 21:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "BITORI",
-//     "fullDate": "Friday 6\tJuly, 02:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "6LACK",
-//     "fullDate": "Thursday 5\tJuly, 18:30, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "THE BLAZE",
-//     "fullDate": "Wednesday 4\tJuly, 23:30, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "BLONDE REDHEAD",
-//     "fullDate": "Saturday 7\tJuly, 23:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "BORIS & MERZBOW",
-//     "fullDate": "Thursday 5\tJuly, 23:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "CELESTE",
-//     "fullDate": "Friday 6\tJuly, 23:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "CEZINANDO",
-//     "fullDate": "Thursday 5\tJuly, 13:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "CHELSEA MANNING",
-//     "fullDate": "Thursday 5\tJuly, 15:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "CHELSEA WOLFE",
-//     "fullDate": "Thursday 5\tJuly, 18:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "CLUTCH",
-//     "fullDate": "Wednesday 4\tJuly, 19:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "COURTNEY MARIE ANDREWS",
-//     "fullDate": "Saturday 7\tJuly, 12:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "DANNY BROWN",
-//     "fullDate": "Saturday 7\tJuly, 17:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "DARK TRANQUILLITY",
-//     "fullDate": "Wednesday 4\tJuly, 22:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "DE UNDERJORDISKE X FRIBYTTERDRØMME",
-//     "fullDate": "Sunday 8\tJuly, 01:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "DEAD CROSS",
-//     "fullDate": "Friday 6\tJuly, 15:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "DEBO BAND",
-//     "fullDate": "Wednesday 4\tJuly, 21:30, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "DEBONAIR (resident DJ)",
-//     "fullDate": "Friday 6\tJuly, 18:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "DJ RASHIDA",
-//     "fullDate": "Thursday 5\tJuly, 21:30, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "DONA ONETE",
-//     "fullDate": "Thursday 5\tJuly, 21:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "THE DWARFS OF EAST AGOUZA",
-//     "fullDate": "Thursday 5\tJuly, 14:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "EL LEOPARDO",
-//     "fullDate": "Thursday 5\tJuly, 22:30, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "EQUIKNOXX FEAT. SHANIQUE MARIE",
-//     "fullDate": "Friday 6\tJuly, 12:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "GAMELAN SALUKAT",
-//     "fullDate": "Thursday 5\tJuly, 12:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "HALEY HEYNDERICKX",
-//     "fullDate": "Thursday 5\tJuly, 12:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "HEILUNG",
-//     "fullDate": "Friday 6\tJuly, 01:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "HOUSE GOSPEL CHOIR",
-//     "fullDate": "Saturday 7\tJuly, 17:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "THE HUNNA",
-//     "fullDate": "Friday 6\tJuly, 12:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "HVAD",
-//     "fullDate": "Friday 6\tJuly, 18:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "INDIKA (resident DJ)",
-//     "fullDate": "Saturday 7\tJuly, 18:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "I’M WITH HER",
-//     "fullDate": "Wednesday 4\tJuly, 20:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "JAMES HOLDEN AND THE ANIMAL SPIRITS",
-//     "fullDate": "Friday 6\tJuly, 17:45, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "JILLIAN MAYER",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "JOHN MAUS",
-//     "fullDate": "Thursday 5\tJuly, 20:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "JUANA MOLINA",
-//     "fullDate": "Saturday 7\tJuly, 18:45, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "JUJU & JORDASH",
-//     "fullDate": "Thursday 5\tJuly, 14:30, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "JUSTIN SHOULDER & CORIN",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "KAKKMADDAFAKKA",
-//     "fullDate": "Wednesday 4\tJuly, 17:30, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "KALI UCHIS",
-//     "fullDate": "Saturday 7\tJuly, 15:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "KEDR LIVANSKIY",
-//     "fullDate": "Saturday 7\tJuly, 19:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "KELLY LEE OWENS",
-//     "fullDate": "Sunday 8\tJuly, 00:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "KIRSTEN ASTRUP",
-//     "fullDate": "Saturday 7\tJuly, 15:45, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "KOKOKO!",
-//     "fullDate": "Saturday 7\tJuly, 19:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "LARGE UNIT BRAZIL EDITION",
-//     "fullDate": "Saturday 7\tJuly, 15:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "LAUREL HALO",
-//     "fullDate": "Friday 6\tJuly, 20:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "LEKHFA",
-//     "fullDate": "Friday 6\tJuly, 14:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "LLNN",
-//     "fullDate": "Saturday 7\tJuly, 02:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "MADALITSO BAND",
-//     "fullDate": "Wednesday 4\tJuly, 20:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "MADBALL",
-//     "fullDate": "Saturday 7\tJuly, 23:30, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "±MAISMENOS±",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "MARIBOU STATE",
-//     "fullDate": "Thursday 5\tJuly, 20:30, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "MARLON WILLIAMS",
-//     "fullDate": "Friday 6\tJuly, 13:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "MAVI PHOENIX",
-//     "fullDate": "Saturday 7\tJuly, 13:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "MHD",
-//     "fullDate": "Sunday 8\tJuly, 00:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "MINYANTA",
-//     "fullDate": "Friday 6\tJuly, 16:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "MOTORSAV",
-//     "fullDate": "Friday 6\tJuly, 02:15, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "MYRKUR",
-//     "fullDate": "Saturday 7\tJuly, 17:00, 2018,\n\t\t\t\t\t\tGloria\n\t\t\t\t\t\n\t\t\t\t\t\tSaturday 7\tJuly, 00:30, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "NAT BLOCH GREGERSEN",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "NATHAN FAKE",
-//     "fullDate": "Wednesday 4\tJuly, 21:30, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "NELSON CAN",
-//     "fullDate": "Thursday 5\tJuly, 19:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "NEW GEN",
-//     "fullDate": "Friday 6\tJuly, 14:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "NIHILOXICA",
-//     "fullDate": "Wednesday 4\tJuly, 17:15, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "NINES",
-//     "fullDate": "Friday 6\tJuly, 16:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "NYT LIV",
-//     "fullDate": "Friday 6\tJuly, 01:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "OH SEES",
-//     "fullDate": "Friday 6\tJuly, 00:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "OMNI",
-//     "fullDate": "Saturday 7\tJuly, 18:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "OND TRO",
-//     "fullDate": "Friday 6\tJuly, 03:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "OPERAP",
-//     "fullDate": "Saturday 7\tJuly, 13:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "OSKAR KOLIANDER",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "OTIM ALPHA",
-//     "fullDate": "Saturday 7\tJuly, 01:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "PAAL NILSSEN-LOVE'S BRAZIL FUNK IMPRO",
-//     "fullDate": "Thursday 5\tJuly, 20:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "PAAL NILSSEN-LOVE'S JAPAN FREE JAZZ AND NOISE",
-//     "fullDate": "Wednesday 4\tJuly, 22:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "PALM",
-//     "fullDate": "Saturday 7\tJuly, 22:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "PAUL BARSCH & TILMAN HORNIG",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "PERNILLE (resident DJ)",
-//     "fullDate": "Wednesday 4\tJuly, 18:00, 2018,\n\t\t\t\t\t\tApollo\n\t\t\t\t\t\n\t\t\t\t\t\tThursday 5\tJuly, 18:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "PETER SOMMER",
-//     "fullDate": "Saturday 7\tJuly, 17:30, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "PIGS PIGS PIGS PIGS PIGS PIGS PIGS",
-//     "fullDate": "Wednesday 4\tJuly, 17:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "PREOCCUPATIONS",
-//     "fullDate": "Thursday 5\tJuly, 22:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "PUBLIC WORKS",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "RASCASUELOS",
-//     "fullDate": "Saturday 7\tJuly, 16:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "REGELBAU PRESENTS CENTRAL + DJ SPORTS + C.K + MANMADE DEEJAY",
-//     "fullDate": "Thursday 5\tJuly, 22:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "RICHARD DAWSON BAND",
-//     "fullDate": "Friday 6\tJuly, 18:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "RVG",
-//     "fullDate": "Saturday 7\tJuly, 12:30, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "SACRED PAWS",
-//     "fullDate": "Saturday 7\tJuly, 22:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "SAMPHA",
-//     "fullDate": "Friday 6\tJuly, 23:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "SANDUNES",
-//     "fullDate": "Friday 6\tJuly, 22:00, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "(SANDY) ALEX G",
-//     "fullDate": "Friday 6\tJuly, 20:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "SAVEUS",
-//     "fullDate": "Wednesday 4\tJuly, 18:00, 2018,\n\t\t\t\t\t\tOrange"
-//   },
-//   {
-//     "name": "SCOUR",
-//     "fullDate": "Saturday 7\tJuly, 20:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "SIGRID",
-//     "fullDate": "Saturday 7\tJuly, 21:30, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "ŠIROM",
-//     "fullDate": "Saturday 7\tJuly, 13:45, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "SKELETONWITCH",
-//     "fullDate": "Friday 6\tJuly, 14:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "SLAVES",
-//     "fullDate": "Wednesday 4\tJuly, 18:30, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "SLYDIGS",
-//     "fullDate": "Sunday 8\tJuly, 00:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "SMERZ",
-//     "fullDate": "Thursday 5\tJuly, 16:45, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "STEFFI",
-//     "fullDate": "Wednesday 4\tJuly, 19:15, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "STEFFLON DON",
-//     "fullDate": "Friday 6\tJuly, 20:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "SUPER PARQUET",
-//     "fullDate": "Saturday 7\tJuly, 20:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "SUPERORGANISM",
-//     "fullDate": "Thursday 5\tJuly, 18:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "TOUCHÉ AMORÉ",
-//     "fullDate": "Friday 6\tJuly, 16:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "TUINA NIKIENTA OLIVIER",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "TUNE-YARDS",
-//     "fullDate": "Thursday 5\tJuly, 15:00, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "TURBOLENS",
-//     "fullDate": "Thursday 5\tJuly, 12:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "VERONIKA GEIGER",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "VETO",
-//     "fullDate": "Saturday 7\tJuly, 19:00, 2018,\n\t\t\t\t\t\tArena"
-//   },
-//   {
-//     "name": "VIKTORIA WENDEL SKOUSEN",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "WATAIN",
-//     "fullDate": "Saturday 7\tJuly, 01:30, 2018,\n\t\t\t\t\t\tAvalon"
-//   },
-//   {
-//     "name": "THE WEATHER STATION",
-//     "fullDate": "Thursday 5\tJuly, 14:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "WILKINSON",
-//     "fullDate": "Friday 6\tJuly, 01:00, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "YASMINE HAMDAN",
-//     "fullDate": "Thursday 5\tJuly, 16:00, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "YASUAKI SHIMIZU",
-//     "fullDate": "Friday 6\tJuly, 12:30, 2018,\n\t\t\t\t\t\tGloria"
-//   },
-//   {
-//     "name": "YONAKA",
-//     "fullDate": "Saturday 7\tJuly, 14:15, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "YOUNG FATHERS",
-//     "fullDate": "Friday 6\tJuly, 22:30, 2018,\n\t\t\t\t\t\tPavilion"
-//   },
-//   {
-//     "name": "ZOE WALKER & NEIL BROMWICH",
-//     "fullDate": ""
-//   },
-//   {
-//     "name": "Ø [PHASE]",
-//     "fullDate": "Friday 6\tJuly, 02:30, 2018,\n\t\t\t\t\t\tApollo"
-//   },
-//   {
-//     "name": "ADDISABABABAND",
-//     "fullDate": "Sunday 1\tJuly, 17:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "ALBIN LEE MELDAU",
-//     "fullDate": "Monday 2\tJuly, 15:30, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "ALCABEAN",
-//     "fullDate": "Sunday 1\tJuly, 20:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "ARTIGEARDIT",
-//     "fullDate": "Tuesday 3\tJuly, 19:30, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "B FROM E",
-//     "fullDate": "Sunday 1\tJuly, 18:30, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "BAIME",
-//     "fullDate": "Sunday 1\tJuly, 23:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "CABAL",
-//     "fullDate": "Monday 2\tJuly, 21:30, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "CLARISSA CONNELLY",
-//     "fullDate": "Sunday 1\tJuly, 18:30, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "CTRLS",
-//     "fullDate": "Monday 2\tJuly, 23:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "DANIEL SAVI (Resident DJ)",
-//     "fullDate": "Sunday 1\tJuly, 18:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "DIRT FORGE",
-//     "fullDate": "Sunday 1\tJuly, 14:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "DISCOTHÈQUE MOBUMFE (Resident DJ)",
-//     "fullDate": "Tuesday 3\tJuly, 18:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "ECSTASY IN ORDER",
-//     "fullDate": "Monday 2\tJuly, 21:30, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "EERA",
-//     "fullDate": "Sunday 1\tJuly, 15:30, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "ELLIS MAY",
-//     "fullDate": "Tuesday 3\tJuly, 16:30, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "EMIL KRUSE",
-//     "fullDate": "Sunday 1\tJuly, 15:30, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "FOOL",
-//     "fullDate": "Tuesday 3\tJuly, 18:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "FRAADS",
-//     "fullDate": "Monday 2\tJuly, 15:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "GOSS",
-//     "fullDate": "Monday 2\tJuly, 18:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "GURLI OCTAVIA",
-//     "fullDate": "Monday 2\tJuly, 14:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "HOLM",
-//     "fullDate": "Tuesday 3\tJuly, 15:30, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "IRIS GOLD",
-//     "fullDate": "Tuesday 3\tJuly, 23:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "JADA",
-//     "fullDate": "Sunday 1\tJuly, 14:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "JAKOB OGAWA",
-//     "fullDate": "Tuesday 3\tJuly, 18:30, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "KIPPENBERGER",
-//     "fullDate": "Monday 2\tJuly, 17:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "KONNI KASS",
-//     "fullDate": "Tuesday 3\tJuly, 14:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "LOKE DEPH",
-//     "fullDate": "Monday 2\tJuly, 16:30, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "LUSTER",
-//     "fullDate": "Monday 2\tJuly, 20:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "LYRA VALENZA",
-//     "fullDate": "Sunday 1\tJuly, 20:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "LØD",
-//     "fullDate": "Tuesday 3\tJuly, 20:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "MARATON",
-//     "fullDate": "Tuesday 3\tJuly, 17:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "MARSHALL CECIL",
-//     "fullDate": "Tuesday 3\tJuly, 21:30, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "MIRIAM BRYANT",
-//     "fullDate": "Sunday 1\tJuly, 17:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "MOUNT LIBERATION UNLIMITED",
-//     "fullDate": "Monday 2\tJuly, 19:30, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "PALE HONEY",
-//     "fullDate": "Monday 2\tJuly, 23:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "ROME IS NOT A TOWN",
-//     "fullDate": "Monday 2\tJuly, 18:30, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "SASSY 009",
-//     "fullDate": "Sunday 1\tJuly, 21:30, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "SIGMA",
-//     "fullDate": "Tuesday 3\tJuly, 15:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "SIMON LITTAUER",
-//     "fullDate": "Tuesday 3\tJuly, 21:30, 2018,\n\t\t\t\t\t\tCountdown"
-//   },
-//   {
-//     "name": "SISTA BOSSEN",
-//     "fullDate": "Sunday 1\tJuly, 21:30, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "SLÆGT",
-//     "fullDate": "Sunday 1\tJuly, 23:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "TAN",
-//     "fullDate": "Tuesday 3\tJuly, 23:00, 2018,\n\t\t\t\t\t\tRising"
-//   },
-//   {
-//     "name": "TIGHT CHERRY (Resident DJ)",
-//     "fullDate": "Monday 2\tJuly, 18:00, 2018,\n\t\t\t\t\t\tCountdown"
-//   }
-// ];
-// var programArray = [];
-//
-//   $.each(bands, function(k,v){
-//    var filldateSplit = v.fullDate.split(",");
-//
-//     var day = getPlayDay(filldateSplit[0]);
-//     var date = getDayName(day);
-//     var start = filldateSplit[1]+"";
-//     start = start.trim().replace(":","");
-//     start = start == "0000" ? "2400":start;
-//     start = parseInt(start);
-//     var stage = filldateSplit[3]+"".trim().replace(/ /g,'');
-//     var stageId = getStageId(stage);
-//     stage = stage.trim();
-//     programArray.push({name: v.name, day: day, date: date, start: start,  stage: stage, stageId: stageId, length: 1});
-//   });
-//   console.log(programArray);
-//
-//
-// function getPlayDay(fd){
-//   if(fd == "") return -1;
-//   if(fd == "30") return 0;
-//   if(fd == "Sunday 1\tJuly") return 1;
-//   if(fd == "Monday 2\tJuly") return 2;
-//   if(fd == "Tuesday 3\tJuly") return 3;
-//   if(fd == "Wednesday 4\tJuly") return 4;
-//   if(fd == "Thursday 5\tJuly") return 5;
-//   if(fd == "Friday 6\tJuly") return 6;
-//   if(fd == "Saturday 7\tJuly") return 7;
-//   return 1000;
-// }
-// function getStageId(fd){
-//   if(fd == "") return -1;
-//   if(fd.includes(  "Apollo" )) return 0;
-//   if(fd.includes(  "Pavilion" )) return 1;
-//   if(fd.includes(  "Arena") ) return 2;
-//   if(fd.includes("Orange")) return 3;
-//   if(fd.includes(  "Gloria")) return 4;
-//   if(fd.includes(  "Avalon") )return 5;
-//   if(fd.includes(  "Countdown")) return 6;
-//   if(fd.includes(  "Rising")) return 7;
-//   return 1000;
-// }
-// function getDayName(fd) {
-//     if(fd == -1) return "Ved det ikke endnu";
-//     if(fd == 0 ) return "Lørdag, 30. juni";
-//     if(fd == 1 ) return "Søndag, 1. juli";
-//     if(fd == 2) return "Mandag, 2. juli";
-//     if(fd == 3) return "Tirsdag, 3. juli";;
-//     if(fd == 4) return "Onsdag, 4. juli";
-//     if(fd == 5) return "Torsdag, 5. juli";
-//     if(fd == 6) return "Fredag, 6. juli";
-//     if(fd == 7) return "Lørdag, 7. juli";
-//     return "uuuhhhh ved det ikke";
-// }
-
-// 30 juni - 7 july
-// lørdag - lørdag
 var programArray = [
   {
     "name": "EMINEM",
@@ -1194,15 +323,15 @@ var programArray = [
     "stageId": 2,
     "length": 1
   },
-  {
-    "name": "AMMAR 808",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "AMMAR 808",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "ANDA UNION",
     "day": 6,
@@ -1212,15 +341,15 @@ var programArray = [
     "stageId": 5,
     "length": 1
   },
-  {
-    "name": "ANNE HAANING",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "ANNE HAANING",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "BABY IN VAIN",
     "day": 7,
@@ -1230,15 +359,15 @@ var programArray = [
     "stageId": 1,
     "length": 1
   },
-  {
-    "name": "BANKSLAVE",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "BANKSLAVE",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "BCUC",
     "day": 5,
@@ -1554,15 +683,15 @@ var programArray = [
     "stageId": 0,
     "length": 1
   },
-  {
-    "name": "JILLIAN MAYER",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "JILLIAN MAYER",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "JOHN MAUS",
     "day": 5,
@@ -1590,15 +719,15 @@ var programArray = [
     "stageId": 0,
     "length": 1
   },
-  {
-    "name": "JUSTIN SHOULDER & CORIN",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "JUSTIN SHOULDER & CORIN",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "KAKKMADDAFAKKA",
     "day": 4,
@@ -1707,15 +836,15 @@ var programArray = [
     "stageId": 2,
     "length": 1
   },
-  {
-    "name": "±MAISMENOS±",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "±MAISMENOS±",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "MARIBOU STATE",
     "day": 5,
@@ -1771,23 +900,32 @@ var programArray = [
     "length": 1
   },
   {
-    "name": "MYRKUR",
+    "name": "MYRKUR (1)",
     "day": 7,
     "date": "Lørdag, 7. juli",
     "start": 1700,
-    "stage": "Gloria\n\t\t\t\t\t\n\t\t\t\t\t\tSaturday 7\tJuly",
+    "stage": "Gloria",
     "stageId": 4,
     "length": 1
   },
   {
-    "name": "NAT BLOCH GREGERSEN",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
+    "name": "MYRKUR (2)",
+    "day": 7,
+    "date": "Lørdag, 7. juli",
+    "start": 0030,
+    "stage": "Pavilion",
+    "stageId": 1,
     "length": 1
   },
+  // {
+  //   "name": "NAT BLOCH GREGERSEN",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "NATHAN FAKE",
     "day": 4,
@@ -1878,15 +1016,15 @@ var programArray = [
     "stageId": 5,
     "length": 1
   },
-  {
-    "name": "OSKAR KOLIANDER",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "OSKAR KOLIANDER",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "OTIM ALPHA",
     "day": 7,
@@ -1923,21 +1061,30 @@ var programArray = [
     "stageId": 4,
     "length": 1
   },
+  // {
+  //   "name": "PAUL BARSCH & TILMAN HORNIG",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
-    "name": "PAUL BARSCH & TILMAN HORNIG",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
-  {
-    "name": "PERNILLE (resident DJ)",
+    "name": "PERNILLE (resident DJ) (1)",
     "day": 4,
     "date": "Onsdag, 4. juli",
     "start": 1800,
-    "stage": "Apollo\n\t\t\t\t\t\n\t\t\t\t\t\tThursday 5\tJuly",
+    "stage": "Apollo",
+    "stageId": 0,
+    "length": 1
+  },
+  {
+    "name": "PERNILLE (resident DJ) (2)",
+    "day": 4,
+    "date": "Torsdag, 5. juli",
+    "start": 1800,
+    "stage": "Apollo",
     "stageId": 0,
     "length": 1
   },
@@ -1968,15 +1115,15 @@ var programArray = [
     "stageId": 1,
     "length": 1
   },
-  {
-    "name": "PUBLIC WORKS",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "PUBLIC WORKS",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "RASCASUELOS",
     "day": 7,
@@ -2166,15 +1313,15 @@ var programArray = [
     "stageId": 1,
     "length": 1
   },
-  {
-    "name": "TUINA NIKIENTA OLIVIER",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "TUINA NIKIENTA OLIVIER",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "TUNE-YARDS",
     "day": 5,
@@ -2193,15 +1340,15 @@ var programArray = [
     "stageId": 1,
     "length": 1
   },
-  {
-    "name": "VERONIKA GEIGER",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "VERONIKA GEIGER",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "VETO",
     "day": 7,
@@ -2211,15 +1358,15 @@ var programArray = [
     "stageId": 2,
     "length": 1
   },
-  {
-    "name": "VIKTORIA WENDEL SKOUSEN",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "VIKTORIA WENDEL SKOUSEN",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "WATAIN",
     "day": 7,
@@ -2283,15 +1430,15 @@ var programArray = [
     "stageId": 1,
     "length": 1
   },
-  {
-    "name": "ZOE WALKER & NEIL BROMWICH",
-    "day": -1,
-    "date": "Ved det ikke endnu",
-    "start": null,
-    "stage": "undefined",
-    "stageId": 1000,
-    "length": 1
-  },
+  // {
+  //   "name": "ZOE WALKER & NEIL BROMWICH",
+  //   "day": -1,
+  //   "date": "Ved det ikke endnu",
+  //   "start": null,
+  //   "stage": "undefined",
+  //   "stageId": 1000,
+  //   "length": 1
+  // },
   {
     "name": "Ø [PHASE]",
     "day": 6,

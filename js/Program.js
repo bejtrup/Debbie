@@ -38,7 +38,7 @@ function settime(now) {
   date =  new Date
   min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
   time = parseInt(date.getHours()+""+min);
-  now = { day: 3, time: time };
+  now = { day: 4, time: time };
   console.log(now);
   var t = now.time == 0000 ? 2400 : now.time;
   var h = parseInt( t.toString().slice(0, -2) );
