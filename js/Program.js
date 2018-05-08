@@ -2,14 +2,24 @@ var date =  new Date
 var min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
 var time = parseInt(date.getHours()+""+min);
 var now = { day: 0, time: time };
-
+var updateMusikProgram = true;
 $( function(){
   settime(now);
-  makeMusikProgram();
+  makeMusikProgram()
+  updateMusikProgram = false;
   }
 );
 
+window.addEventListener("orientationchange", function() {
+    if(screen.orientation.type != "portrait-primary" && updateMusikProgram) {
+      updateMusikProgram = false;
+      makeMusikProgram();
+    }
+});
+
 function makeMusikProgram(){
+    console.log("nu");
+    clearMusikProgram();
     $.each(programArray, function(k,v){
       var rateClass = BandRating[k] == undefined ? "ikkeSat" : BandRating[k];
       if(v.day >= now.day && rateClass != -1){
@@ -32,6 +42,13 @@ function makeMusikProgram(){
          $("#day_"+v.day).find(".stage"+v.stageId).append(band);
        }
     });
+}
+
+function clearMusikProgram(){
+  for(i=0;i<=7;i++){
+    console.log(i);
+    $("#day_"+i).find(".stage").html("");
+  }
 }
 
 function settime(now) {

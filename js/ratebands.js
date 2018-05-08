@@ -43,6 +43,7 @@ function saveRateBand(id, rate){
     BandRating[id] = rate;
   }
   localStorage.setItem('BandRating', JSON.stringify(BandRating));
+  updateMusikProgram = true;
 }
 function loadNextBand(id){
   if(id < 190){
@@ -125,4 +126,5 @@ function toggleRating(id, rate) {
   saveRateBand(id,newrate)
   var html = getListhtml(id,programArray[id].name,newrate);
   $("div#listitem_"+id).replaceWith(html);
+  updateMusikProgram = true;
 }
