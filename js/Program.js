@@ -18,7 +18,6 @@ window.addEventListener("orientationchange", function() {
 });
 
 function makeMusikProgram(){
-    console.log("nu");
     clearMusikProgram();
     $.each(programArray, function(k,v){
       var rateClass = BandRating[k] == undefined ? "ikkeSat" : BandRating[k];
@@ -46,7 +45,6 @@ function makeMusikProgram(){
 
 function clearMusikProgram(){
   for(i=0;i<=7;i++){
-    console.log(i);
     $("#day_"+i).find(".stage").html("");
   }
 }
