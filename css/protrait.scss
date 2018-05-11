@@ -133,6 +133,9 @@
     img {
       width: 100%;
     }
+      &.nope{
+        padding-bottom: 0.5rem;
+      }
   }
   .food.nope.fall{
       @include animation(0, 0.3s, nope, ease-in)
