@@ -42,6 +42,7 @@
     animation-name: $animation;
     animation-timing-function: $ease;
     animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
 }
 /* ANIMATIONS */
 /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
