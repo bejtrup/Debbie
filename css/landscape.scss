@@ -145,10 +145,11 @@
   position: absolute;
   display: flex;
   height: 100%;
-    align-items: center;
-    padding: 0;
+  align-items: center;
+  padding: 0;
   z-index: 10;
-  border-radius: 20px 0 0 20px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
   h4 {
     margin: 0;
     margin-left: 1rem;
@@ -162,22 +163,10 @@
 }
 //perspective( 60vw ) rotateY( -45deg ) rotateZ(-20deg) translateY(212%)
 .pee {
-  background: -moz-linear-gradient(360deg, rgba(252,245,98,1) 55%, rgba(252,245,98,0.98) 56%, rgba(252,245,98,0) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(55%, rgba(252,245,98,1)), color-stop(56%, rgba(252,245,98,0.98)), color-stop(100%, rgba(252,245,98,0))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(360deg, rgba(252,245,98,1) 55%, rgba(252,245,98,0.98) 56%, rgba(252,245,98,0) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(360deg, rgba(252,245,98,1) 55%, rgba(252,245,98,0.98) 56%, rgba(252,245,98,0) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(360deg, rgba(252,245,98,1) 55%, rgba(252,245,98,0.98) 56%, rgba(252,245,98,0) 100%); /* ie10+ */
-  background: linear-gradient(90deg, rgba(252,245,98,1) 55%, rgba(252,245,98,0.98) 56%, rgba(252,245,98,0) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FCF562', endColorstr='#FCF562',GradientType=1 ); /* ie6-9 */
+    background-image: url("../img/pee_wipe.png");
 }
 .poo {
-  background: -moz-linear-gradient(360deg, rgba(162,106,42,1) 55%, rgba(162,106,42,0.98) 56%, rgba(162,106,42,0) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(55%, rgba(162,106,42,1)), color-stop(56%, rgba(162,106,42,0.98)), color-stop(100%, rgba(162,106,42,0))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(360deg, rgba(162,106,42,1) 55%, rgba(162,106,42,0.98) 56%, rgba(162,106,42,0) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(360deg, rgba(162,106,42,1) 55%, rgba(162,106,42,0.98) 56%, rgba(162,106,42,0) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(360deg, rgba(162,106,42,1) 55%, rgba(162,106,42,0.98) 56%, rgba(162,106,42,0) 100%); /* ie10+ */
-  background: linear-gradient(90deg, rgba(162,106,42,1) 55%, rgba(162,106,42,0.98) 56%, rgba(162,106,42,0) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a26a2a', endColorstr='#a26a2a',GradientType=1 ); /* ie6-9 */
+  background-image: url("../img/poo_wipe.png");
 }
 .ikkeSat{
   color: #bdb792;
