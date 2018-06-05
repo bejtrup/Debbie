@@ -7,7 +7,7 @@ if( localStorage.getItem("BandRating") ){
 
 $(function(){
   var startBand = BandRating.length;
-  if( startBand < 190 ){
+  if( startBand < 182 ){
     $("div.bandName").html(getBandNameHtml(startBand)).removeClass("out");
     var isAnimationOn = false;
     $("img.food").click(function(){
@@ -46,7 +46,7 @@ function saveRateBand(id, rate){
   updateMusikProgram = true;
 }
 function loadNextBand(id){
-  if(id < 190){
+  if(id < 182){
     $("div.bandName").addClass("out");
     setTimeout(function(){
       $("div.bandName").html(getBandNameHtml( id ));
