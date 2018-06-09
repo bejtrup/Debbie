@@ -51,7 +51,7 @@ function loadNextBand(id){
     setTimeout(function(){
       $("div.bandName").html(getBandNameHtml( id ));
       $("div.bandName").removeClass("out");
-    }, 700);
+    }, 350);
   } else {
     slutScene();
   }
@@ -63,7 +63,8 @@ function getBandNameHtml(id){
 }
 
 function slutScene(){
-  console.log("slut");
+  $("div#ratebands").hide();
+  $("div#endscene").show();
 }
 
 //  menu
