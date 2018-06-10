@@ -69,6 +69,7 @@ function slutScene(){
 
 //  menu
 $(function(){
+  console.log("##");;
   $("div#menubtn").on('click', function(){
     $("#menu").addClass("out");
   });
