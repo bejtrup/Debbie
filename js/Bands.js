@@ -39,7 +39,7 @@ var programArray = [
     "name": "NINE INCH NAILS",
     "day": 5,
     "date": "Torsdag, 5. juli",
-    "start": 0000,
+    "start": 0030,
     "stage": "Arena",
     "stageId": 2,
     "length": 1.2
@@ -417,7 +417,7 @@ var programArray = [
     "name": "6LACK",
     "day": 5,
     "date": "Torsdag, 5. juli",
-    "start": 1830,
+    "start": 1800,
     "stage": "Apollo",
     "stageId": 0,
     "length": 1
@@ -426,7 +426,7 @@ var programArray = [
     "name": "THE BLAZE",
     "day": 4,
     "date": "Onsdag, 4. juli",
-    "start": 2330,
+    "start": 0000,
     "stage": "Apollo",
     "stageId": 0,
     "length": 1
@@ -489,7 +489,7 @@ var programArray = [
     "name": "CLUTCH",
     "day": 4,
     "date": "Onsdag, 4. juli",
-    "start": 1900,
+    "start": 1930,
     "stage": "Avalon",
     "stageId": 5,
     "length": 1
@@ -900,7 +900,7 @@ var programArray = [
     "length": 0.75
   },
   {
-    "name": "MYRKUR (1)",
+    "name": "MYRKUR: FOLKESANGE",
     "day": 7,
     "date": "Lørdag, 7. juli",
     "start": 1700,
@@ -909,10 +909,10 @@ var programArray = [
     "length": 1
   },
   {
-    "name": "MYRKUR (2)",
+    "name": "MYRKUR",
     "day": 7,
     "date": "Lørdag, 7. juli",
-    "start": 0030,
+    "start": 0015,
     "stage": "Pavilion",
     "stageId": 1,
     "length": 1
@@ -1092,7 +1092,7 @@ var programArray = [
     "name": "PETER SOMMER",
     "day": 7,
     "date": "uuuhhhh ved det ikke",
-    "start": 1730,
+    "start": 1800,
     "stage": "Orange",
     "stageId": 3,
     "length": 1.5
