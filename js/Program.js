@@ -1,7 +1,8 @@
 var date =  new Date
 var min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
 var time = parseInt(date.getHours()+""+min);
-var now = { day: 0, time: time };
+var day = date.getDate();
+var now = { day: day, time: time };
 var updateMusikProgram = true;
 $( function(){
   settime(now);
@@ -50,10 +51,11 @@ function clearMusikProgram(){
 }
 
 function settime(now) {
-  date =  new Date
-  min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
-  time = parseInt(date.getHours()+""+min);
-  now = { day: 4, time: time };
+  // date =  new Date
+  // min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
+  // time = parseInt(date.getHours()+""+min);
+  // var day = date.getDate();
+  // now = { day: 4, time: time };
   console.log(now);
   var t = now.time == 0000 ? 2400 : now.time;
   var h = parseInt( t.toString().slice(0, -2) );
@@ -66,49 +68,49 @@ function settime(now) {
   setTimeout(function(){ settime(now)  }, 30000 ); //0.5min.
 }
 
-$(document).ready(function(){
-    $('div#landscape').bind('scroll',chk_scroll);
-});
+// $(document).ready(function(){
+//     $('div#landscape').bind('scroll',chk_scroll);
+// });
 
-var isScrolling;
-var lastScroll = 0;
-var scrolledDistLeft = 0;
-var fiftyProcent = $(window).width() / 2;
+// var isScrolling;
+// var lastScroll = 0;
+// var scrolledDistLeft = 0;
+// var fiftyProcent = $(window).width() / 2;
 
-function chk_scroll()
-{
-  //get dist and end
-  scrolledDistLeft = $("div#landscape").scrollLeft() - lastScroll;
-  window.clearTimeout( isScrolling );
-  isScrolling = setTimeout(function() {
-		// Run the callback
-		console.log( 'Scrolling has stopped.' );
-    lastScroll = $("div#landscape").scrollLeft();
-
-    //$(".SkamLepos").css({"transform":"translateX(0)"})
-	}, 66);
-
-  // rotate now arrow
-   if($("div#landscape").scrollLeft() > 10){
-     $("div.nowArrow").addClass("left");
-   } else {
-     $("div.nowArrow").removeClass("left");
-   }
-   // show SkamLepos
-  //  if(scrolledDistLeft > 300){
-  //    var left = ((scrolledDistLeft*0.6)-300);
-  //    left = left > 50 ? 50 : left;
-  //    $(".SkamLepos").css({"transform":"translateX(-"+left+"px)"})
-  //  }
-  //  if($("div#landscape").scrollRight() < fiftyProcent){
-  //    console.log($("div#landscape").scrollRight());
-  //    var right = $("div#landscape").scrollRight() - fiftyProcent -50;
-  //    $(".SkamLepos").css({"transform":"translateX("+right+"px)"})
-  //  }
-  //  if($("div#landscape").scrollRight() < 5){
-  //    $(".SkamLepos").css({"transform":"translateX(0)"})
-  //  }
-}
+// function chk_scroll()
+// {
+//   //get dist and end
+//   scrolledDistLeft = $("div#landscape").scrollLeft() - lastScroll;
+//   window.clearTimeout( isScrolling );
+//   isScrolling = setTimeout(function() {
+// 		// Run the callback
+// 		console.log( 'Scrolling has stopped.' );
+//     lastScroll = $("div#landscape").scrollLeft();
+//
+//     //$(".SkamLepos").css({"transform":"translateX(0)"})
+// 	}, 66);
+//
+//   // rotate now arrow
+//    if($("div#landscape").scrollLeft() > 10){
+//      $("div.nowArrow").addClass("left");
+//    } else {
+//      $("div.nowArrow").removeClass("left");
+//    }
+//    // show SkamLepos
+//   //  if(scrolledDistLeft > 300){
+//   //    var left = ((scrolledDistLeft*0.6)-300);
+//   //    left = left > 50 ? 50 : left;
+//   //    $(".SkamLepos").css({"transform":"translateX(-"+left+"px)"})
+//   //  }
+//   //  if($("div#landscape").scrollRight() < fiftyProcent){
+//   //    console.log($("div#landscape").scrollRight());
+//   //    var right = $("div#landscape").scrollRight() - fiftyProcent -50;
+//   //    $(".SkamLepos").css({"transform":"translateX("+right+"px)"})
+//   //  }
+//   //  if($("div#landscape").scrollRight() < 5){
+//   //    $(".SkamLepos").css({"transform":"translateX(0)"})
+//   //  }
+// }
 
 function goToNow(){
   $("div#landscape").animate({scrollLeft: 0}, 700);
