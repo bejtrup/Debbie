@@ -16,32 +16,39 @@
   <script src="js/ratebands.js"></script>
 </head>
 <body>
-  <div id="ratebands"  class="fullscreen protrait" >
-    <div class="bandName out">
-    </div>
-    <div class="giveRate">
-      <div class="foodContainer">
-          <img class="food nope" data-rate="-1" src="img/Pate.png" alt="">
-        <h4>nope</h4>
+  <div class="fullscreen protrait" >
+    <div id="ratebands">
+      <div class="bandName out">
       </div>
-      <div class="foodContainer">
-          <img class="food meh" data-rate="0" src="img/wine.png" alt="">
-        <h4>meh</h4>
+      <div class="giveRate">
+        <div class="foodContainer">
+            <img class="food nope" data-rate="-1" src="img/Pate.png" alt="">
+          <h4>nope</h4>
+        </div>
+        <div class="foodContainer">
+            <img class="food meh" data-rate="0" src="img/wine.png" alt="">
+          <h4>meh</h4>
+        </div>
+        <div class="foodContainer">
+              <img class="food yeah" data-rate="1" src="img/burger.png" alt="">
+          <h4>yeah</h4>
+        </div>
       </div>
-      <div class="foodContainer">
-            <img class="food yeah" data-rate="1" src="img/burger.png" alt="">
-        <h4>yeah</h4>
+      <div class="onCan">
+        <img src="img/on_can_front.png" class="onCanFront" alt="">
+        <img src="img/on_can_back.png" class="onCanBack" alt="">
       </div>
     </div>
-    <div class="onCan">
-      <img src="img/on_can_front.png" class="onCanFront" alt="">
-      <img src="img/on_can_back.png" class="onCanBack" alt="">
+    <div id="endscene" style="display: none;">
+    <div class="done_bobble">
+        <img class="debbie_done" width="80%" src="img/done_bubble.png" alt="">
     </div>
-
-    <div id="menubtn" class="menubtn">
+    <img class="debbie_done" width="100%" src="img/done_debbie.png" alt="">
+  </div> 
+      <div id="menubtn" class="menubtn">
       <img src="img/rune_menu.png" width="40" height="40" class="clickEffect">
     </div>
-    <div id="menu" class="menu">
+      <div id="menu" class="menu">
       <div class="head">
         <img id="close" class="clickEffect" src="img/rune_close.png" width="40" height="40" />
       </div>
@@ -73,10 +80,10 @@ Hvis du vil have den bedste oplevelse med Debbie, så skal du tilføje hende til
       </div>
     </div>
 
-    <div id="listbtn" class="listbtn">
+      <div id="listbtn" class="listbtn">
       <img src="img/rune_list.png" width="40" height="40" class="clickEffect">
     </div>
-    <div id="list" class="menu">
+      <div id="list" class="menu">
       <div class="head">
         <img id="closeList" class="clickEffect" src="img/rune_close.png" width="40" height="40" />
       </div>
@@ -85,17 +92,10 @@ Hvis du vil have den bedste oplevelse med Debbie, så skal du tilføje hende til
         <div id="listWrapper"></div>
       </div>
     </div>
-
-    <!-- <p>Checkboxes med dage - så man kan fra vælge de dage an ikke kommer / eller skriv dagen ved kunstner</p>
-    <p>husk info om at den gemme lokalt - ogderfor kun virker lokalt</p>
-    <p>skal man kunne tilføje noget der mangler - fx events</p> -->
-  </div>
-  <div id="endscene" class="fullscreen protrait" style="display: none;">
-    <div class="done_bobble">
-        <img class="debbie_done" width="80%" src="img/done_bubble.png" alt="">
-    </div>
-    <img class="debbie_done" width="100%" src="img/done_debbie.png" alt="">
-  </div>
+  </div>    
+  
+  
+  
   <div id="landscape"  class="fullscreen landscape">
     <img src="img/can_top.png" class="can" alt="">
     <img src="img/can_bottom.png" class="can bottom" alt="">
