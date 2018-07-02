@@ -51,11 +51,11 @@ function clearMusikProgram(){
 }
 
 function settime(now) {
-  // date =  new Date
-  // min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
-  // time = parseInt(date.getHours()+""+min);
-  // var day = date.getDate();
-  // now = { day: 4, time: time };
+  date =  new Date
+  min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
+  time = parseInt(date.getHours()+""+min);
+  date = date.getDate();
+  now = { day: date, time: time };
   console.log(now);
   var t = now.time == 0000 ? 2400 : now.time;
   var h = parseInt( t.toString().slice(0, -2) );
