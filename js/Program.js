@@ -1,4 +1,4 @@
-var date =  new Date
+var date =  new Date;
 var min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
 var time = parseInt(date.getHours()+""+min);
 var day = date.getDate();
@@ -12,10 +12,10 @@ $( function(){
 );
 
 window.addEventListener("orientationchange", function() {
+  settime(now);
     if(screen.orientation.type != "portrait-primary" && updateMusikProgram) {
       updateMusikProgram = false;
       makeMusikProgram();
-      settime(now);
     }
 });
 
@@ -51,8 +51,10 @@ function clearMusikProgram(){
   }
 }
 
+var Timeout;
 function settime(now) {
-  date =  new Date
+  clearTimeout(Timeout);
+  date =  new Date;
   min = date.getMinutes() < 10 ? 0+''+date.getMinutes() : date.getMinutes();
   time = parseInt(date.getHours()+""+min);
   date = date.getDate();
@@ -66,7 +68,7 @@ function settime(now) {
 
   $(".program").css({"transform": "translateX(-"+left+"vw)"});
   $("#nowArrowText").html(h+":"+time.toString().slice(-2));
-  setTimeout(function(){ settime(now)  }, 30000 ); //0.5min.
+  Timeout = setTimeout(function(){ settime(now)  }, 30000 ); //0.5min.
 }
 
 $(document).ready(function(){
