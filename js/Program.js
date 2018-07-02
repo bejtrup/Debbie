@@ -15,6 +15,7 @@ window.addEventListener("orientationchange", function() {
     if(screen.orientation.type != "portrait-primary" && updateMusikProgram) {
       updateMusikProgram = false;
       makeMusikProgram();
+      settime(now);
     }
 });
 
